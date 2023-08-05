@@ -1,0 +1,29 @@
+.rating {
+  margin-bottom: 183px;
+}
+.rating__wrap {
+  display: flex;
+  justify-content: center;
+}
+.rating__item {
+  flex: 0 0 148px;
+  margin: 0 24px;
+}
+.rating__header {
+  position: relative;
+  margin-bottom: 23px;
+  height: 148px;
+}
+.rating__number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 32px;
+  font-weight: 900;
+  color: var(--text-dark);
+}
+.rating__title {
+  font-size: 14px;
+  text-align: center;
+}

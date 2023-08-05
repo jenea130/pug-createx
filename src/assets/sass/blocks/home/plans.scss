@@ -1,0 +1,66 @@
+.plans {
+  margin-bottom: 180px;
+}
+.plans__title {
+  text-align: center;
+  margin-bottom: 63px;
+}
+.plans__header {
+  margin-bottom: 59px;
+  display: flex;
+  justify-content: center;
+}
+.plans__btn {
+  position: relative;
+  flex: 0 0 210px;
+  height: 46px;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--accent);
+  border-radius: 40px;
+  border: 1px solid var(--accent);
+  background: transparent;
+  z-index: 1;
+  transition: all 0.4s;
+  outline: none;
+  cursor: pointer;
+}
+.plans__btn strong {
+  font-size: 16px;
+  font-weight: 600;
+}
+.plans__btn:first-of-type {
+  right: -20px;
+}
+.plans__btn:last-of-type {
+  left: -20px;
+}
+.plans__btn.active,
+.plans__btn:hover {
+  color: white;
+  background: var(--accent);
+  z-index: 2;
+}
+.plans__body {
+  position: relative;
+  height: 540px;
+}
+.plans__wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  transition: all 0.4s;
+  opacity: 0;
+  z-index: 1;
+}
+.plans__wrap.active {
+  opacity: 1;
+  z-index: 2;
+}
+.plans__item {
+  flex: 0 0 390px;
+}

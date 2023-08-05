@@ -1,0 +1,33 @@
+extends template
+
+block css
+    link(rel="stylesheet" type="text/css" href="assets/css/my.css")
+
+block title
+    title Main
+
+block content
+    include ../blocks/main-header
+    include ../blocks/home/home-intro
+    .container
+        include ../blocks/home/agency
+        include ../blocks/home/logos
+        include ../blocks/home/createx
+        include ../blocks/home/rating
+        include ../blocks/home/tabs
+        include ../blocks/home/freeseo
+    .container
+        include ../blocks/home/ask
+    include ../blocks/home/studies
+    .container
+        include ../blocks/home/benefits
+        include ../blocks/home/plans
+        include ../blocks/home/comment
+        include ../blocks/home/news
+    include ../blocks/globals/footer
+
+block scripts
+    script(src="assets/libs/code.jquery.com_jquery-3.7.0.min.js")
+    script(src="assets/libs/slick/slick/slick.min.js")
+    script(src="assets/jquery/custom-jquery.js")
+    script(src="assets/js/dist/webpack.js")

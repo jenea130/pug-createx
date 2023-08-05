@@ -1,0 +1,102 @@
+.card {
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid rgba(119, 114, 241, 0.4);
+  background: white;
+  box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.03),
+  0px 12px 10px -6px rgba(154, 156, 165, 0.04),
+  0px 30px 24px -10px rgba(154, 156, 165, 0.05),
+  0px 80px 80px -20px rgba(154, 156, 165, 0.08);
+  transition: all 0.4s;
+}
+.card:hover {
+  background: var(--text-dark);
+  border: 1px solid #03cea4;
+  box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.05),
+  0px 12px 10px -6px rgba(30, 33, 44, 0.08),
+  0px 26px 24px -10px rgba(30, 33, 44, 0.1),
+  0px 60px 80px -20px rgba(30, 33, 44, 0.16);
+}
+.card:hover .card__title {
+  color: white;
+}
+.card:hover .card__price strong,
+.card:hover .card__price sup {
+  color: #03cea4;
+}
+.card:hover .card__list span {
+  color: white;
+}
+.card:hover .card__list li:not(.nonactive) svg {
+  fill: #03cea4;
+}
+.card:hover .card__btn {
+  color: white;
+  background: var(--accent);
+}
+.card__title {
+  padding-top: 45px;
+  margin-bottom: 14px;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+.card__price {
+  margin-bottom: 46px;
+  position: relative;
+}
+.card__price::after {
+  position: absolute;
+  content: "";
+  top: 70px;
+  right: 0px;
+  width: 390px;
+  height: 1px;
+  background: linear-gradient(
+                  315deg,
+                  rgba(218, 219, 221, 0) 0%,
+                  rgba(218, 219, 221, 0.5) 12.33%,
+                  #dadbdd 51.91%,
+                  rgba(218, 219, 221, 0.5) 87.85%,
+                  rgba(218, 219, 221, 0) 100%
+  );
+}
+.card__price strong {
+  font-size: 46px;
+  font-weight: 900;
+  color: var(--accent);
+}
+.card__price sup {
+  position: relative;
+  left: 5px;
+  bottom: 15px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--accent);
+}
+.card__list {
+  margin-left: 100px;
+  margin-bottom: 36px;
+  text-align: center;
+}
+.card__list li {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-dark);
+}
+.card__list svg {
+  margin-right: 8px;
+  fill: var(--accent);
+}
+.card__list .nonactive {
+  color: #9a9ca5;
+}
+.card__list .nonactive svg {
+  fill: #9a9ca5;
+}
+.card__btn {
+  margin-bottom: 40px;
+}

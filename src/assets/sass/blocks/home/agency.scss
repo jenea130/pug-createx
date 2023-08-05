@@ -1,0 +1,41 @@
+.agency {
+  margin-bottom: 173px;
+}
+
+.agency__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.agency__text {
+  width: 51%;
+  color: var(--text-dark);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.agency__items {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -20px;
+  padding-left: 70px;
+  width: 49%;
+}
+
+.agency__item {
+  display: flex;
+  align-items: center;
+  margin: 0 20px 30px;
+  flex: 0 0 calc(50% - 40px);
+}
+
+.agency__icon {
+  flex: 0 0 75px;
+  margin-right: 16px;
+}
+
+.agency__label {
+  font-size: 14px;
+  line-height: 1.5;
+}
