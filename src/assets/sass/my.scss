@@ -3,6 +3,8 @@
 @import "partials/mixins";
 @import "../libs/slick/slick/slick.scss";
 @import "partials/base";
+@import "blocks/globals/btn";
+@import "blocks/globals/info";
 @import "blocks/header.scss";
 @import "blocks/menu.scss";
 @import "blocks/home/home-intro";
@@ -21,7 +23,6 @@
 @import "blocks/globals/card";
 @import "blocks/home/comment";
 @import "blocks/home/news";
-@import "blocks/globals/footer";
 @import "blocks/globals/footer";
 @import "blocks/our-services/page-intro";
 @import "blocks/globals/breadcrumbs.scss";

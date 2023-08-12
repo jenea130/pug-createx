@@ -9,21 +9,21 @@
 	}
 	a {
 		position: relative;
-        padding-right: 24px;
-        margin-right: 8px;
-        color: white;
+		padding-right: 24px;
+		margin-right: 8px;
+		color: white;
 		&::after {
 			position: absolute;
 			content: "";
 			top: 50%;
 			right: 0;
-            transform: translateY(-50%);
+			transform: translateY(-50%);
 			width: 16px;
 			height: 16px;
-			background: url('../img/icons/icon-arrow-breadcrumbs.svg') no-repeat center;
+			background: url("../img/icons/icon-arrow-breadcrumbs.svg") no-repeat center;
 		}
 	}
-    span {
-        color: rgba(255, 255, 255, 0.6);
-    }
+	span {
+		color: rgba(255, 255, 255, 0.6);
+	}
 }
