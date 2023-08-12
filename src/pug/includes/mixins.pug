@@ -1,3 +1,7 @@
-mixin icon(icon, location)
-  svg(class="" + icon)
-    use(xlink:href="#" + location )
+mixin info(label, title, path)
+  .info
+    .info__icon
+      img(src=path, alt="")
+    .info__content
+      h4.info__label= label
+      h3.info__title= title 
