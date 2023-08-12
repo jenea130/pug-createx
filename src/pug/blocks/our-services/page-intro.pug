@@ -1,3 +1,11 @@
+- 
+    const data = [
+        {
+            text: "(405) 555-0128",
+            link: true
+
+        }
+    ];
 .page-intro
     img.page-intro__img(src="assets/img/our-services/page-intro/our-services-intro.jpg", alt="")
     .page-intro__content
@@ -13,4 +21,4 @@
             .page-intro__text We offer more than services. Our agency provides solutions to your top-priority concerns, involving customer targeting, email performance and sales growth. If there is no existing solution readily available, we create one, specifically to suit your business.
             footer.page-intro__footer
                 a.btn.btn--border.btn--light.btn--color-light(href="#") Start now
-                +info('Call us', '(405) 555-0128', 'assets/img/icons/icon-phone.svg')
+                +info('Call us', 'assets/img/icons/icon-phone.svg', data)

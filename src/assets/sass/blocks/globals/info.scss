@@ -1,19 +1,25 @@
 .info {
-    display: flex;
-    align-items: flex-start;
-    text-align: left;
-    &__icon {
-        margin-right: 12px;
-    }
-    &__label {
-        margin-bottom: 3px;
-        font-size: 14px;
-        font-weight: 700;
-        color: var(--text-gray);
-        
-    }
-    &__title {
-        font-size: 18px;
-        color: white;
-    }
+	display: flex;
+	align-items: flex-start;
+	text-align: left;
+	&__icon {
+		margin-right: 12px;
+	}
+	&__label {
+		margin-bottom: 3px;
+		font-size: 14px;
+		font-weight: 700;
+		color: var(--text-gray);
+	}
+	a,
+	span {
+		font-size: 18px;
+	}
+	a {
+		color: white;
+
+		&.info--dark {
+			color: var(--accent);
+		}
+	}
 }
