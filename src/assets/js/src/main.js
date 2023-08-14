@@ -1,4 +1,5 @@
 import animationTitle from "./modules/animation";
+import headerScroll from "./modules/scroll/headerScroll";
 import studiesClass from "./modules/studies/studiesClass";
 
 window.addEventListener("DOMContentLoaded", function () {
@@ -9,5 +10,6 @@ window.addEventListener("DOMContentLoaded", function () {
 	if (studies) {
 		studiesClass();
 	}
-	// animationTitle();
+
+	headerScroll();
 });
