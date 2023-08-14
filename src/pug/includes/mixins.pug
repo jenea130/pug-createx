@@ -13,3 +13,10 @@ mixin info(label, path, data = [])
             a.info--dark(href="#")= data_item.text
           else
             span= data_item.text
+
+mixin intro-form(label, input, btn)
+  .intro-form 
+    .intro-form__label= label
+    .intro-form__wrap 
+      input.intro-form__input(type="text", placeholder=input)
+      .intro-form__btn= btn
