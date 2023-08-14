@@ -1,0 +1,28 @@
+.markets {
+    padding: 2px 0 120px;
+    // margin-bottom: 120px;
+	&__title {
+        margin-bottom: 60px;
+        text-align: center;
+	}
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        flex: 0 0 240px;
+        text-align: center;
+    }
+    &__img {
+        margin-bottom: 24px;
+    }
+    &__subtitle {
+        margin-bottom: 14px;
+        font-size: 20px;
+        color: var(--text-dark);
+    }
+	&__text {
+        font-size: 16px;
+        line-height: 1.6;
+	}
+}

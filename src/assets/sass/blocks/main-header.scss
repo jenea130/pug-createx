@@ -1,19 +1,19 @@
-.header {
+.main-header {
     position: absolute;
     padding: 20px 0;
     width: 100%;
-    z-index: 2;
+    z-index: 1000;
 }
 
-.header__wrap {
+.main-header__wrap {
     display: flex;
     align-items: center;
 }
 
-.header__logo {
+.main-header__logo {
     margin-right: 60px;
 }
 
-.header__menu {
+.main-header__menu {
     margin-right: auto;
 }

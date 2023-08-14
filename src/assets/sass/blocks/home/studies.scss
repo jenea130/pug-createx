@@ -1,7 +1,11 @@
 .studies {
   margin-bottom: 100px;
   background: #f4f5f6;
+  &.studies--services {
+    margin-bottom: 116px;
+  }
 }
+
 .studies__title {
   padding-top: 83px;
   margin-bottom: 13px;
