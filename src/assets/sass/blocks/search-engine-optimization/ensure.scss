@@ -1,0 +1,20 @@
+.ensure {
+    margin-bottom: 180px;
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__img {
+        flex: 0 0 705px;
+    }
+
+    &__content {
+        padding-left: 135px;
+    }
+
+    &__title {
+        margin-bottom: 40px;
+    }
+}

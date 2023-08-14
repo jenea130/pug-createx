@@ -68,10 +68,15 @@ p {
     font-size: 46px;
     font-weight: 900;
     color: var(--text-dark);
+    &--lh {
+        line-height: 1.3;
+    }
 }
 
+
 .text {
-    line-height: 1.6;
+    font-size: 16px;
+    line-height: 1.66;
 }
 
 .label {
