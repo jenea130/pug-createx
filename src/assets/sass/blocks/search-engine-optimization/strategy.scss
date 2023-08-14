@@ -1,0 +1,30 @@
+.strategy {
+    margin-bottom: 120px;
+
+    &__title {
+        margin-bottom: 59px;
+        text-align: center;
+    }
+
+    &__wrap {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 83px 187px;
+    }
+
+    &__item {
+        flex: 0 0 285px;
+    }
+
+    &__img {
+        margin-bottom: 25px;
+        height: 48px;
+    }
+
+    &__subtitle {
+        margin-bottom: 8px;
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--text-dark);
+    }
+}
