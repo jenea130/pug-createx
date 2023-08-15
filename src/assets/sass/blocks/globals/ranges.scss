@@ -1,0 +1,49 @@
+.ranges {
+    &__wrap {
+        display: flex;
+        gap: 32px;
+    }
+
+    &__block {
+        display: flex;
+    }
+
+    &__range {
+        margin-right: 12px;
+    }
+
+    &__number {
+        margin-bottom: 4px;
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--text-dark);
+    }
+
+    &__description {
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    &__circle {
+        height: 42px;
+    }
+
+    &__circle-bg {
+        fill: none;
+        opacity: 0.3;
+        stroke-width: 3.8;
+    }
+
+    &__circle-base {
+        fill: none;
+        stroke-width: 3.8;
+        stroke-linecap: butt;
+        animation: progress 1s ease-out forwards;
+    }
+}
+
+@keyframes progress {
+    0% {
+        stroke-dasharray: 0 100;
+    }
+}

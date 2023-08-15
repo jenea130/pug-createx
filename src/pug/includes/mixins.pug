@@ -20,3 +20,13 @@ mixin intro-form(label, input, btn)
     .intro-form__wrap 
       input.intro-form__input(type="text", placeholder=input)
       .intro-form__btn= btn
+
+mixin ranges(percent, color, number, desc)
+  .ranges__block
+    .ranges__range
+      svg.ranges__circle(viewBox="0 0 36 36")
+        path.ranges__circle-bg(stroke= color d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831")
+        path.ranges__circle-base(stroke-dasharray= percent stroke= color d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831")
+    .ranges__wrapper
+      .ranges__number= number
+      .ranges__description= desc
