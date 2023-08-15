@@ -1,6 +1,6 @@
 .get-free {
     margin-bottom: 120px;
-    padding: 50px 60px 24px;
+    padding: 50px 60px 47px;
     border-radius: 4px;
     background: var(--accent);
     box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.03), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 80px 80px -20px rgba(154, 156, 165, 0.08);
@@ -13,45 +13,4 @@
         text-align: center;
     }
 
-    .form {
-        &__wrap {
-            display: flex;
-            align-items: center;
-            gap: 24px;
-        }
-
-        &__group:first-of-type,
-        &__group:nth-of-type(2) {
-            flex: 0 0 260px;
-        }
-
-        &__label {
-            margin-bottom: 10px;
-            display: block;
-            font-size: 14px;
-            font-weight: 400;
-            color: white;
-        }
-
-        input {
-            height: 44px;
-            font-size: 14px;
-            font-weight: 400;
-            color: #9a9ca5;
-            background: white;
-        }
-
-        input::placeholder {
-            font-size: 14px;
-            font-weight: 400;
-            color: #9a9ca5;
-        }
-
-        &__btn {
-            padding: 0 36px;
-            height: 44px;
-            font-size: 14px;
-            background: var(--text-dark);
-        }
-    }
 }
