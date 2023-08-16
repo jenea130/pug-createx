@@ -1,7 +1,6 @@
 .single-case-studies {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 180px;
 
     &__main {
         flex: 0 0 710px;
@@ -9,5 +8,11 @@
 
     &__sidebar {
         flex: 0 0 390px;
+    }
+    &__footer {
+       .studies {
+        margin-bottom: 0;
+        padding-bottom: 140px;
+       }
     }
 }

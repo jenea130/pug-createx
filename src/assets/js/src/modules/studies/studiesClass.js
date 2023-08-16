@@ -3,7 +3,7 @@ export default function studiesClass() {
 
     const path = window.location.pathname;
     // console.log(path);
-    if (path !== "/") {
+    if (path === "/our-services.html") {
         studies.classList.add('studies--services');
     }
 
