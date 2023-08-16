@@ -36,3 +36,10 @@ mixin link(href, title)
   a.link(href=href)
     span= title
     include ../blocks/icons/icon-link.pug
+
+mixin list(...items)
+  ul.list
+    each item in items
+      li 
+        include ../blocks/icons/icon-list.pug
+        span= item

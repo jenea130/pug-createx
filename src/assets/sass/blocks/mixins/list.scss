@@ -1,0 +1,11 @@
+.list {
+    li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 4px;
+        color: var(--text-light);
+    }
+    svg {
+        margin-right: 16px;
+    }
+}
