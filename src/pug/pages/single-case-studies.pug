@@ -7,11 +7,16 @@ block title
     title Main
 
 block content
-    .page-intro-search-engine-optimization
-        include ../includes/mixins
-        include ../blocks/main-header
-        include ../blocks/single-case-studies/single-case-studies-intro
+    include ../includes/mixins
+    include ../blocks/main-header
+    include ../blocks/single-case-studies/single-case-studies-intro
     .container
+        .single-case-studies
+            .single-case-studies__main
+                include ../blocks/single-case-studies/case-rangers
+                include ../blocks/single-case-studies/case-description
+            .single-case-studies__sidebar
+
 
     include ../blocks/globals/footer
 

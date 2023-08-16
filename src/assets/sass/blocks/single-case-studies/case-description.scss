@@ -1,0 +1,15 @@
+.case-description {
+    font-family: var(--font-1);
+    p {
+        margin-bottom: 24px;
+        color: #424551;
+        &:last-of-type {
+            margin-bottom: 80px;
+        }
+    }
+    strong {
+        font-size: 20px;
+        line-height: 1.5;
+        color: var(--gray-900, #1E212C);
+    }
+}
