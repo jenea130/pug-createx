@@ -1,14 +1,14 @@
 //- TODO: pixel perfect
 .filter 
     .filter__header 
-        button.filter__btn.active All case studies
-        button.filter__btn Social Media
-        button.filter__btn Seo
-        button.filter__btn Research
-        button.filter__btn Content & PR
-        button.filter__btn Payed Traffic
+        button.filter__btn.active(data-target="") All case studies
+        button.filter__btn(data-target="social-media") Social Media
+        button.filter__btn(data-target="seo") Seo
+        button.filter__btn(data-target="research") Research
+        button.filter__btn(data-target="content-pr") Content & PR
+        button.filter__btn(data-target="payed-traffic") Payed Traffic
     .filter__wrap
-        .filter__item
+        .filter__item(data-filter="social-media")
             .item-filter
                 .item-filter__picture
                     img.item-filter__img(src="assets/img/case-studies/filter/filter-1.jpg" alt="")
@@ -22,7 +22,7 @@
                             +range("100 100", "100%", "Deliverability", "#03CEA4" )
                     .item-filter__text.text Createx SEO Agency helped JNational Inc. increase their MQL to SQL conversion rate by 300%.
                     +link("#", "View case")
-        .filter__item
+        .filter__item(data-filter="seo")
             .item-filter
                 .item-filter__picture
                     img.item-filter__img(src="assets/img/case-studies/filter/filter-2.jpg" alt="")
@@ -36,7 +36,7 @@
                             +range("80 100", "100%", "second mixin")
                     .item-filter__text.text With an advanced A/B testing and usability analysis, Createx SEO Agency helps Del Mar see a 400% increase in conversion rate.
                     +link("#", "View case")
-        .filter__item
+        .filter__item(data-filter="research")
             .item-filter
                 .item-filter__picture
                     img.item-filter__img(src="assets/img/case-studies/filter/filter-3.jpg" alt="")
@@ -50,7 +50,7 @@
                             +range("80 100", "100%", "second mixin", "red" )
                     .item-filter__text.text With an advanced A/B testing and usability analysis, Createx SEO Agency helps Lovato see a 200% increase in conversion rate.
                     +link("#", "View case")
-        .filter__item
+        .filter__item(data-filter="content-pr")
             .item-filter
                 .item-filter__picture
                     img.item-filter__img(src="assets/img/case-studies/filter/filter-4.jpg" alt="")
@@ -64,7 +64,7 @@
                             +range("80 100", "100%", "second mixin", "red" )
                     .item-filter__text.text We helped Sunset company break through a noisy industry and better understand their buyer's journey. 
                     +link("#", "View case")
-        .filter__item
+        .filter__item(data-filter="payed-traffic")
             .item-filter
                 .item-filter__picture
                     img.item-filter__img(src="assets/img/case-studies/filter/filter-5.jpg" alt="")
@@ -78,7 +78,7 @@
                             +range("80 100", "100%", "second mixin", "red" )
                     .item-filter__text.text We helped Dove company break through a noisy industry and better understand their buyer's journey.
                     +link("#", "View case")
-        .filter__item
+        .filter__item(data-filter="social-media")
             .item-filter
                 .item-filter__picture
                     img.item-filter__img(src="assets/img/case-studies/filter/filter-6.jpg" alt="")
@@ -92,3 +92,6 @@
                             +range("80 100", "100%", "second mixin", "red" )
                     .item-filter__text.text We helped Dove company break through a noisy industry and better understand their buyer's journey.
                     +link("#", "View case")
+    .filter__more 
+        include ../icons/icon-more
+        span Load more
