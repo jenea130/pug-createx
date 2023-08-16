@@ -1,0 +1,20 @@
+.case-share {
+    display: flex;
+    align-items: center;
+
+    &__title {
+        margin-right: 12px;
+        font-size: 20px;
+        color: var(--text-dark);
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+
+    li {
+        margin-right: 12px;
+    }
+
+}
