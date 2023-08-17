@@ -1,6 +1,11 @@
 .page-about-us {
     .page-intro {
         height: 661px;
+
+        &__breadcrumbs {
+            margin-bottom: 46px;
+        }
+
         &__title {
             font-size: 72px;
         }

@@ -1,0 +1,101 @@
+.video {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+
+    &.active {
+        &::before {
+            opacity: 0;
+            pointer-events: none;
+        }
+        .video__play {
+            transform: translateY(-600px);
+        }
+        .video__img {
+            transform: translateY(700px);
+            opacity: 0;
+        }
+        .video__mute {
+            opacity: 0;
+        }
+        
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(#1E212C, 0.6);
+        z-index: 3;
+        transition: all .4s;
+        transition-delay: 0.8s;
+    }
+
+    &__iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 2;
+        transition: all .8s;
+        transition-delay: 1.2s;
+    }
+
+    &__play {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        background: var(--accent);
+        border-radius: 50%;
+        z-index: 4;
+        transition: all .8s;
+    }
+
+    &__triangle {
+        position: relative;
+        top: 2px;
+        left: 4px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 10px 0 10px 17.3px;
+        border-color: transparent transparent transparent #ffffff;
+
+    }
+
+    &__mute {
+        position: absolute;
+        bottom: 32px;
+        left: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background: rgba(#fff, 0.12);
+        border-radius: 50px;
+        z-index: 4;
+        transition: all .4s;
+        transition-delay: 2s;
+    }
+}
