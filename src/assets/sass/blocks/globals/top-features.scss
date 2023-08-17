@@ -1,0 +1,23 @@
+.top-features {
+    margin: 0 -20px;
+    display: flex;
+    flex-wrap: wrap;
+
+
+    &__item {
+        display: flex;
+        align-items: center;
+        margin: 0 20px 30px;
+        flex: 0 0 calc(50% - 40px);
+    }
+
+    &__icon {
+        flex: 0 0 75px;
+        margin-right: 16px;
+    }
+
+    &__label {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}

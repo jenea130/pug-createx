@@ -1,0 +1,18 @@
+.awards {
+    margin-bottom: 120px;
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__img {
+        flex: 0 0 285px;
+    }
+    &__content {
+        padding-top: 85px;
+        flex: 1;
+        padding-left: 135px;
+    }
+    &__title {
+        margin-bottom: 60px;
+    }
+}
