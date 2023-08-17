@@ -1,0 +1,30 @@
+.intro-list {
+    display: flex;
+    justify-content: space-between;
+
+    span {
+        position: relative;
+        margin-left: 20px;
+        bottom: 14px;
+        left: 10px;
+        font-size: 20px;
+        font-weight: 700;
+        color: white;
+    }
+
+    li:not(:first-of-type) ::before {
+        content: "";
+        position: absolute;
+        left: -155px;
+        bottom: -10px;
+        width: 1px;
+        height: 40px;
+        background: linear-gradient(315deg,
+                rgba(218, 219, 221, 0) 0%,
+                rgba(218, 219, 221, 0.5) 12.33%,
+                #dadbdd 51.91%,
+                rgba(218, 219, 221, 0.5) 87.85%,
+                rgba(218, 219, 221, 0) 100%);
+        opacity: 0.4;
+    }
+}

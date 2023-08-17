@@ -1,0 +1,15 @@
+.page-about-us {
+    .page-intro {
+        height: 661px;
+        &__title {
+            font-size: 72px;
+        }
+
+        &__text {
+            margin-bottom: 120px;
+            font-size: 20px;
+            line-height: 1.5;
+            color: var(--text-gray);
+        }
+    }
+}
