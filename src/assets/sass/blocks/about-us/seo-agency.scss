@@ -1,0 +1,39 @@
+.seo-agency {
+    &__wrap {
+        display: flex;
+        gap: 30px;
+    }
+
+    &__column1 {
+        position: relative;
+        top: 77px;
+        flex: 0 0 285px;
+        img {
+            margin-bottom: 30px;
+
+        }
+    }
+
+    &__column2 {
+        flex: 0 0 390px;
+    }
+
+    &__column3 {
+        position: relative;
+        top: 177px;
+        flex: 0 0 495px;
+    }
+    &__footer {
+        position: relative;
+        margin: -106px auto 120px;
+        padding: 48px 60px;
+        max-width: 807px;
+        background: white;
+        z-index: 2;
+        box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.03), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 80px 80px -20px rgba(154, 156, 165, 0.08);
+        border-radius: 4px;
+    }
+    &__subtitle {
+        margin-bottom: 24px;
+    }
+}
