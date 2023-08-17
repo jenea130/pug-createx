@@ -1,5 +1,6 @@
 .page-about-us {
     .page-intro {
+        margin-bottom: 119px;
         height: 661px;
 
         &__breadcrumbs {
@@ -16,5 +17,8 @@
             line-height: 1.5;
             color: var(--text-gray);
         }
+    }
+    .rating {
+        margin-bottom: 121px;
     }
 }
