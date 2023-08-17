@@ -1,0 +1,16 @@
+.clients {
+    margin-bottom: 155px;
+    &__wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 37px;
+    }
+    &__item {
+        flex: 0 0 145px;
+    }
+    &__title {
+        margin-bottom: 59px;
+        text-align: center;
+    }
+}
