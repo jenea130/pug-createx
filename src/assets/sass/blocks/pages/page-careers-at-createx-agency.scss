@@ -1,6 +1,6 @@
 .page-careers-at-createx-agency {
     .page-intro {
-        margin-bottom: 119px;
+        margin-bottom: 94px;
         height: 619px;
 
         
@@ -19,20 +19,14 @@
             color: var(--text-gray);
         }
     }
-    .accordion {
-        &__wrap {
-            display: flex;
-            justify-content: space-between;
-        }
-        &__content {
-            flex: 0 0 767px;
-        }
-        &__title {
-            margin-bottom: 12px;
-            font-size: 28px;
-        }
+    .accordion__title {
+        margin-bottom: 7px;
+        font-size: 28px;
     }
-    .btn {
-        height: 44px;
+    .accordion__text {
+        max-width: 768px;
+    }
+    .accordion__list li {
+        margin-bottom: 5px;
     }
 }
