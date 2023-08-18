@@ -1,0 +1,37 @@
+.page-careers-at-createx-agency {
+    .careers-at-createx-agency-intro {
+        margin-bottom: 119px;
+        height: 661px;
+
+        &__breadcrumbs {
+            margin-bottom: 46px;
+        }
+
+        &__title {
+            font-size: 72px;
+        }
+
+        &__text {
+            margin-bottom: 120px;
+            font-size: 20px;
+            line-height: 1.5;
+            color: var(--text-gray);
+        }
+    }
+    .accordion {
+        &__wrap {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__content {
+            flex: 0 0 767px;
+        }
+        &__title {
+            margin-bottom: 12px;
+            font-size: 28px;
+        }
+    }
+    .btn {
+        height: 44px;
+    }
+}

@@ -1,0 +1,29 @@
+- 
+    const data = [
+        {
+            text: "hello@createx.com",
+            link: true
+        },
+        {
+            text: "(405) 555-0128",
+            link: true
+        }
+    ];
+
+.page-intro
+    img.page-intro__img(src="assets/img/careers-at-createx-agency/careers-at-createx-agency-intro/careers-at-createx-agency-bg.jpg" alt="")
+    .page-intro__content
+        .container
+            .page-intro__breadcrumbs
+                ul.breadcrumbs 
+                    li
+                        a(href="/") 
+                            include ../icons/icon-home
+                    li
+                        a(href="/about-us.html") About us
+                    li
+                        span Careers at Createx Agency
+            h1.page-intro__title Careers at Createx Agency
+            .page-intro__text We’re looking for extraordinary talents! If you're passionate about SEO and digital marketing, we want to hear from you.
+            +info('Talk to us', 'assets/img/icons/icon-comment.svg', data)
+            +info('Call us', 'assets/img/icons/icon-phone.svg', data)

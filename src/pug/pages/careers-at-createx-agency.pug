@@ -1,0 +1,23 @@
+extends template
+
+block css
+    link(rel="stylesheet" type="text/css" href="assets/css/my.css")
+
+block title
+    title Main
+
+block content
+    .page-careers-at-createx-agency
+        include ../includes/mixins
+        include ../blocks/main-header
+        include ../blocks/careers-at-createx-agency/careers-at-createx-agency-intro
+        .container
+            include ../blocks/careers-at-createx-agency/ask-careers-at-createx-agency
+
+    include ../blocks/globals/footer
+
+block scripts
+    script(src="assets/libs/code.jquery.com_jquery-3.7.0.min.js")
+    script(src="assets/libs/slick/slick/slick.min.js")
+    script(src="assets/jquery/custom-jquery.js")
+    script(src="assets/js/dist/webpack.js")
