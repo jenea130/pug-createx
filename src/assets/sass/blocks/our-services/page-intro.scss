@@ -36,8 +36,34 @@
         letter-spacing: 1px;
         color: white;
     }
+
     &__text {
         margin: 0 auto 40px;
         max-width: 810px;
     }
+
+    &__wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__item {
+        position: relative;
+        padding: 0 40px;
+
+        &:not(:last-of-type) {
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 1px;
+                height: 100%;
+                opacity: 0.4;
+                background: linear-gradient(315deg, rgba(218, 219, 221, 0.00) 0%, rgba(218, 219, 221, 0.50) 12.33%, #DADBDD 51.91%, rgba(218, 219, 221, 0.50) 87.85%, rgba(218, 219, 221, 0.00) 100%);
+            }
+        }
+    }
+
 }

@@ -3,7 +3,9 @@
         {
             text: "hello@createx.com",
             link: true
-        },
+        }
+    ];
+    const data_2 = [
         {
             text: "(405) 555-0128",
             link: true
@@ -25,5 +27,8 @@
                         span Careers at Createx Agency
             h1.page-intro__title Careers at Createx Agency
             .page-intro__text We’re looking for extraordinary talents! If you're passionate about SEO and digital marketing, we want to hear from you.
-            +info('Talk to us', 'assets/img/icons/icon-comment.svg', data)
-            +info('Call us', 'assets/img/icons/icon-phone.svg', data)
+            .page-intro__wrap
+                .page-intro__item
+                    +info('Talk to us', 'assets/img/icons/icon-comment.svg', data)
+                .page-intro__item
+                    +info('Call us', 'assets/img/icons/icon-phone.svg', data_2)
