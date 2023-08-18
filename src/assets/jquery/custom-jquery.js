@@ -130,4 +130,6 @@ jQuery(document).ready(function ($) {
             slider_single.slick('slickNext')
         })
     }
+
+    $('.form select').styler()
 });

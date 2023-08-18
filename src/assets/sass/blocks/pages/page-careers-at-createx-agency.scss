@@ -1,9 +1,11 @@
 .page-careers-at-createx-agency {
+    background: #f4f5f6;
+
     .page-intro {
         margin-bottom: 94px;
         height: 619px;
 
-        
+
         &__breadcrumbs {
             margin-bottom: 50px;
         }
@@ -19,13 +21,20 @@
             color: var(--text-gray);
         }
     }
+
+    .ask-careers {
+        padding-bottom: 10px;
+    }
+
     .accordion__title {
         margin-bottom: 7px;
         font-size: 28px;
     }
+
     .accordion__text {
         max-width: 768px;
     }
+
     .accordion__list li {
         margin-bottom: 5px;
     }

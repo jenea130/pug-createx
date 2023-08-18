@@ -1,0 +1,39 @@
+.find
+    .container
+        .find__wrap
+            .find__content
+                h2.find__title.title Didn’t find what you were looking for?
+                .find__text Send your CV or subscribe to our newsletter to receive information about new vacancies.
+            .find__form
+                .form.form--light
+                    form(action='')
+                        .form__wrap
+                            .form__group
+                                label(for='') Name*
+                                input(type='text' placeholder='Your name')
+                            .form__group
+                                label(for='') Phone*
+                                input(type='text' placeholder='Your phone number')
+                        .form__wrap
+                            .form__group
+                                label(for='') Email
+                                input(type='text' placeholder='Your working email')
+                            .form__group
+                                label(for='') I am interested in*
+                                select
+                                    option Choose...
+                                    option First item
+                                    option Second item
+                        .form__group
+                            label(for='') Cover letter
+                            textarea(name="" placeholder="Your cover letter") 
+                        .form__group
+                            .form__file 
+                                include ../icons/icon-file
+                                span Attach your CV*
+                                input(type="file")
+                        .form__footer
+                            .form__privacy
+                                input#checkbox.form__checkbox(type='checkbox')
+                                label(for='checkbox') I want to suscribe to receive information about new vacancies.
+                            button.form__submit.btn(disabled='true') Send Resume
