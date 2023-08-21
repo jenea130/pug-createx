@@ -14,8 +14,9 @@ block content
         .container
             include ../blocks/blog/latest-blog
             .page-blog__wrap
-                include ../blocks/blog/main-blog
-                include ../blocks/blog/aside-blog
+                .page-blog__main
+                    include ../blocks/blog/main-blog
+                .page-blog__aside
 
 
     include ../blocks/globals/footer

@@ -1,15 +1,26 @@
 .page-blog {
     .page-intro {
         height: 623px;
+
         &__breadcrumbs {
             margin-bottom: 46px;
         }
+
         &__text {
             margin-bottom: 58px;
         }
     }
+
     &__wrap {
         display: flex;
         gap: 78px;
+    }
+
+    &__main {
+        flex: 1;
+    }
+
+    &__aside {
+        flex: 0 0 342px;
     }
 }
