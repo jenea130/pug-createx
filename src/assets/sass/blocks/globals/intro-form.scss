@@ -17,6 +17,9 @@
     &__input {
         height: 100%;
         flex: 0 0 389px;
+        font-family: var(--font-1);
+        font-size: 16px;
+        font-weight: 400;
         text-indent: 16px;
         border-radius: 4px 0 0 4px;
         border: 1px solid rgba(255, 255, 255, 0.20);

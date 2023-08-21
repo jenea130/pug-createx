@@ -1,0 +1,11 @@
+.page-blog {
+    .page-intro {
+        height: 623px;
+        &__breadcrumbs {
+            margin-bottom: 46px;
+        }
+        &__text {
+            margin-bottom: 58px;
+        }
+    }
+}

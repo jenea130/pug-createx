@@ -1,0 +1,14 @@
+.page-intro
+    img.page-intro__img(src="assets/img/blog/blog-bg.jpg" alt="")
+    .page-intro__content
+        .container
+            .page-intro__breadcrumbs
+                ul.breadcrumbs 
+                    li
+                        a(href="/") 
+                            include ../icons/icon-home
+                    li
+                        span Blog
+            h1.page-intro__title Blog
+            .page-intro__text Thoughts, trends and up-to-date news in search and digital marketing. Subsribe to our blog and receive latest news weekly.
+            +intro-form('', 'Search the blog', 'Search')
