@@ -1,0 +1,14 @@
+.subscribe
+    .container
+        .subscribe__wrap
+            .subscribe__content
+                h2.subscribe__title.title Subsribe to our blog
+                .subscribe__text And receive latest trends in search, marketing, digital and news.
+                .subscribe__form
+                    +intro-form("Email", "Your working email", "Subscribe", "intro-form--dark")
+                .form
+                    .form__privacy
+                        input#checkbox.form__checkbox(type='checkbox')
+                        label(for='checkbox') I agree to receive communications from Createx SEO Agency
+            .subscribe__img
+                img(src="assets/img/blog/subscribe/subscribe.svg", alt="")

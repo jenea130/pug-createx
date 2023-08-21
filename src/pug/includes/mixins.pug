@@ -14,8 +14,8 @@ mixin info(label, path, data = [])
           else
             span= data_item.text
 
-mixin intro-form(label, input, btn)
-  .intro-form 
+mixin intro-form(label, input, btn, class_name)
+  .intro-form(class=class_name) 
     .intro-form__label= label
     .intro-form__wrap 
       input.intro-form__input(type="text", placeholder=input)

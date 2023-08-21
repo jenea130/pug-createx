@@ -1,0 +1,55 @@
+.subscribe {
+    padding: 100px 0 39px;
+    background: #F4F5F6;
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__content {
+        flex: 0 0 420px;
+    }
+    &__img {
+        position: relative;
+        top: -40px;
+        right: -20px;
+    }
+    .intro-form {
+        max-width: initial;
+        &__input {
+            flex: 2;
+            outline: none;
+        }
+        &__btn {
+            flex: 1;
+        }
+    }
+
+    &__title {
+        margin-bottom: 24px;
+    }
+
+    &__text {
+        margin-bottom: 40px;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1.5;
+        color: var(--text-color);
+    }
+    &__form {
+        margin-bottom: 24px;
+    
+    }
+    .form__privacy label {
+        padding-right: 0;
+        font-size: 14px;
+        color: var(--text-light);
+        &::before {
+            top: 3px;
+        }
+        &::after {
+            top: 7px;
+        }
+    }
+    
+}
