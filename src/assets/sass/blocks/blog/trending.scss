@@ -1,16 +1,21 @@
 .trending {
+    margin-bottom: 60px;
+
     &__title {
         margin-bottom: 22px;
     }
+
     &__item {
         display: flex;
         margin-bottom: 24px;
     }
+
     &__img {
         position: relative;
         margin-right: 21px;
         flex: 0 0 100px;
         height: 100px;
+
         img {
             position: absolute;
             top: 0;
@@ -20,15 +25,18 @@
             object-fit: cover;
         }
     }
+
     &__info {
         display: flex;
         align-items: center;
         margin-bottom: 7px;
         font-size: 14px;
+
         img {
             margin-right: 8px;
         }
     }
+
     &__subtitle {
         font-size: 16px;
         font-weight: 700;

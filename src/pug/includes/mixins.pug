@@ -55,9 +55,14 @@ mixin post(data)
         each tag in data.tags
           li 
             if (tag.img)
-              img(src=tag.img, alt="", width="16")
+              img(src=tag.img, alt="" width="16")
             span= tag.text
       h3.post__title= data.title
       if (data.text)
         .post__text= data.text
       +link(data.link.href, data.link.text)
+
+mixin category_list(...items)
+  ul.category-list 
+    each item in items
+      li= item
