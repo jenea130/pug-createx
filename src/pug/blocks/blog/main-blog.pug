@@ -1,0 +1,140 @@
+-
+    let main_items = [
+        {
+            img: "assets/img/blog/main-blog/main-blog-1.jpg",
+            tags: [
+                {
+                    text: "Marketing",
+                },
+                {
+                    text: "July 5, 2020",
+                    img: "assets/img/icons/clock.svg"
+                },
+                {
+                    text: "By Diane Mccoy",
+                    img: "assets/img/icons/user.svg"
+                }
+            ],
+            title: "Digital Marketing Game: What You Need to Know to Stay Ahead?",
+            text: "Nunc nulla vestibulum nunc quam arcu tristique convallis. Posuere augue pellentesque mauris gravida...",
+            link: {
+                href: "single-blog.html",
+                text: "Read more"
+            }
+        },
+        {
+            img: "assets/img/blog/main-blog/main-blog-2.jpg",
+            tags: [
+                {
+                    text: "Ad Tips",
+                },
+                {
+                    text: "July 5, 2020",
+                    img: "assets/img/icons/clock.svg"
+                },
+                {
+                    text: "By Shawn Edwards",
+                    img: "assets/img/icons/user.svg"
+                }
+            ],
+            title: "How to Evaluate and Compare Social Media Tools Today.",
+            text: "Eu donec pellentesque et aliquet. Fringilla morbi etiam turpis nisl nunc, quis sagittis ut. Pulvinar amet vitae..",
+            link: {
+                href: "single-blog.html",
+                text: "Read more"
+            }
+        },
+        {
+            img: "assets/img/blog/main-blog/main-blog-3.jpg",
+            tags: [
+                {
+                    text: "Ad Tips",
+                },
+                {
+                    text: "July 5, 2020",
+                    img: "assets/img/icons/clock.svg"
+                },
+                {
+                    text: "By Shawn Edwards",
+                    img: "assets/img/icons/user.svg"
+                }
+            ],
+            title: "The Best Practices to Optimize Your Website for Mobile.",
+            text: "Pharetra, ullamcorper iaculis viverra parturient sed id sed. Convallis proin dignissim lacus, purus gravida...",
+            link: {
+                href: "single-blog.html",
+                text: "Read more"
+            }
+        },
+        {
+            img: "assets/img/blog/main-blog/main-blog-4.jpg",
+            tags: [
+                {
+                    text: "Paid Search",
+                },
+                {
+                    text: "July 5, 2020",
+                    img: "assets/img/icons/clock.svg"
+                },
+                {
+                    text: "By Shawn Edwards",
+                    img: "assets/img/icons/user.svg"
+                }
+            ],
+            title: "10 Seriously Underused Paid Search Strategies.",
+            text: "Euismod congue faucibus diam etiam diam netus vitae ornare vitae. Cursus sollicitudin posuere venenatis...",
+            link: {
+                href: "single-blog.html",
+                text: "Read more"
+            }
+        },
+        {
+            img: "assets/img/blog/main-blog/main-blog-5.jpg",
+            tags: [
+                {
+                    text: "Media & Press",
+                },
+                {
+                    text: "July 5, 2020",
+                    img: "assets/img/icons/clock.svg"
+                },
+                {
+                    text: "By Shawn ",
+                    img: "assets/img/icons/user.svg"
+                }
+            ],
+            title: "How to Create Content That Gets Linked and Shared.",
+            text: "Eu donec pellentesque et aliquet. Fringilla morbi etiam turpis nisl nunc, quis sagittis ut. Pulvinar amet vitae..",
+            link: {
+                href: "single-blog.html",
+                text: "Read more"
+            }
+        },
+        {
+            img: "assets/img/blog/main-blog/main-blog-6.jpg",
+            tags: [
+                {
+                    text: "Ad Tips",
+                },
+                {
+                    text: "July 5, 2020",
+                    img: "assets/img/icons/clock.svg"
+                },
+                {
+                    text: "By Shawn Edwards",
+                    img: "assets/img/icons/user.svg"
+                }
+            ],
+            title: "12 Simple Tips to Creating an Effective Ad.",
+            text: "Imperdiet risus consectetur dignissim lorem sollicitudin eget bibendum pellentesque nec. Adipiscing viverra in non euismod. Amet nulla aliquam nulla magna...",
+            link: {
+                href: "single-blog.html",
+                text: "Read more"
+            }
+        }
+    ]
+.main-blog
+    .main-blog__wrap
+        each item in main_items
+            .main-blog__item
+                +post(item)

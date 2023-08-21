@@ -55,7 +55,7 @@ mixin post(data)
         each tag in data.tags
           li 
             if (tag.img)
-              img(src=tag.img, alt="")
+              img(src=tag.img, alt="", width="16")
             span= tag.text
       h3.post__title= data.title
       if (data.text)

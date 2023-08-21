@@ -1,0 +1,22 @@
+.main-blog {
+    margin-bottom: 96px;
+    &__wrap {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    &__item {
+        margin-bottom: 32px;
+        flex: 0 0 390px;
+    }
+
+    .post {
+        &__img {
+            height: 300px;
+        }
+        &__title {
+            margin-bottom: 7px;
+        }
+    }
+}
