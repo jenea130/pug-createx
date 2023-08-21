@@ -1,0 +1,31 @@
+.blog-categories {
+    &__title {
+        margin-bottom: 24px;
+    }
+
+    &__list {
+        li {
+            margin-bottom: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--text-light);
+            transition: all 0.4s;
+            cursor: pointer;
+
+            &.active,
+            &:hover {
+                color: var(--accent);
+            }
+        }
+    }
+
+    &__subtitle {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    &__count {
+        font-size: 14px;
+    }
+}
