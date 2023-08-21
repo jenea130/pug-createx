@@ -43,3 +43,21 @@ mixin list(...items)
       li 
         include ../blocks/icons/icon-list.pug
         span= item
+
+mixin post(data)
+  .post
+    .post__img
+      img(src=data.img, alt="")
+      if (data.label) 
+        .post__label= data.label
+    .post__content
+      ul.post__list
+        each tag in data.tags
+          li 
+            if (tag.img)
+              img(src=tag.img, alt="")
+            span= tag.text
+      h3.post__title= data.title
+      if (data.text)
+        .post__text= data.text
+      +link(data.link.href, data.link.text)

@@ -1,0 +1,52 @@
+-
+    let items = [
+        {
+            label: "Latest Post",
+            img: "assets/img/blog/latest-blog/latest-blog-1.jpg",
+            tags: [
+                {
+                    text: "SEO",
+                },
+                {
+                    text: "July 5, 2020",
+                    img: "assets/img/icons/clock.svg"
+                },
+                {
+                    text: "By Diane Mccoy",
+                    img: "assets/img/icons/user.svg"
+                }
+            ],
+            title: "How to Maximize Your ROI Through Scientific SEM?",
+            link: {
+                href: "single-blog.html",
+                text: "Read more"
+            }
+        },
+        {
+            label: "Latest Post",
+            img: "assets/img/blog/latest-blog/latest-blog-2.jpg",
+            tags: [
+                {
+                    text: "Marketing",
+                },
+                {
+                    text: "July 5, 2020",
+                    img: "assets/img/icons/clock.svg"
+                },
+                {
+                    text: "By Diane Mccoy",
+                    img: "assets/img/icons/user.svg"
+                }
+            ],
+            title: "The Basics of Blogging Search Engine Optimization.",
+            link: {
+                href: "single-blog.html",
+                text: "Read more"
+            }
+        }
+    ]
+.latest-blog 
+    .latest-blog__wrap
+        each item in items
+            .latest-blog__item
+                +post(item)

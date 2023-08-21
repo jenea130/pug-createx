@@ -131,5 +131,8 @@ jQuery(document).ready(function ($) {
         })
     }
 
-    $('.form select').styler()
+    if (document.querySelector('.form select')) {
+
+        $('.form select').styler()
+    }
 });

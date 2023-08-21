@@ -1,0 +1,11 @@
+.latest-blog {
+    margin-bottom: 96px;
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+    &__item {
+        flex: 1;
+    }
+}

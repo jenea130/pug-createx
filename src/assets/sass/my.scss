@@ -3,6 +3,7 @@
 @import "partials/mixins";
 @import "../libs/slick/slick/slick.scss";
 @import "partials/base";
+// globals
 @import "blocks/globals/btn";
 @import "blocks/globals/info";
 @import "blocks/globals/form";
@@ -15,6 +16,10 @@
 @import "blocks/globals/intro-list";
 @import "blocks/globals/top-features";
 @import "blocks/globals/jq-selectbox";
+// mixins
+@import "blocks/mixins/list";
+@import "blocks/mixins/link";
+@import "blocks/mixins/post";
 @import "blocks/main-header.scss";
 @import "blocks/menu.scss";
 @import "blocks/home/home-intro";
@@ -42,11 +47,9 @@
 @import "blocks/search-engine-optimization/tree";
 @import "blocks/case-studies/filter";
 @import "blocks/case-studies/item-filter";
-@import "blocks/mixins/link";
 @import "blocks/pages/single-case-studies";
 @import "blocks/single-case-studies/case-description";
 @import "blocks/single-case-studies/case-info";
-@import "blocks/mixins/list";
 @import "blocks/single-case-studies/case-aside";
 @import "blocks/single-case-studies/category-list";
 @import "blocks/single-case-studies/case-share";
@@ -61,3 +64,4 @@
 @import "blocks/pages/page-careers-at-createx-agency";
 @import "blocks/careers-at-createx-agency/find";
 @import "blocks/pages/page-blog";
+@import "blocks/blog/latest-blog";
