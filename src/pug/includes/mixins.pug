@@ -66,3 +66,13 @@ mixin category_list(...items)
   ul.category-list 
     each item in items
       li= item
+
+mixin post_small(data)
+  .post-small
+      .post-small__img
+          img(src=data.img, alt="")
+      .post-small__content
+          .post-small__info
+              img(src="assets/img/icons/clock.svg", alt="")
+              span= data.date
+          h3.post-small__subtitle= data.title

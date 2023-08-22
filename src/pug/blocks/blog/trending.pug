@@ -1,26 +1,23 @@
+-
+    let trending_items = [
+        {
+            img: "assets/img/blog/trending/trending-1.jpg",
+            date: "July 5, 2020",
+            title: "5 Surprising Ways to Combine Content Marketing with PPC"
+        },
+        {
+            img: "assets/img/blog/trending/trending-2.jpg",
+            date: "April 9, 2020",
+            title: "Why SEO Is All About Content Marketing?"
+        },
+        {
+            img: "assets/img/blog/trending/trending-3.jpg",
+            date: "March 12, 2020",
+            title: "10 tips for a small business digital marketing strategy"
+        }
+    ]
 .trending 
     h2.trending__title.title.title--small Now Trending
-    .trending__item
-        .trending__img
-            img(src="assets/img/blog/trending/trending-1.jpg", alt="")
-        .trending__content
-            .trending__info 
-                img(src="assets/img/icons/clock.svg", alt="")
-                span July 5, 2020
-            h3.trending__subtitle 5 Surprising Ways to Combine Content Marketing with PPC
-    .trending__item
-        .trending__img
-            img(src="assets/img/blog/trending/trending-2.jpg", alt="")
-        .trending__content
-            .trending__info
-                img(src="assets/img/icons/clock.svg", alt="")
-                span April 9, 2020
-            h3.trending__subtitle Why SEO Is All About Content Marketing?
-    .trending__item
-        .trending__img
-            img(src="assets/img/blog/trending/trending-3.jpg", alt="")
-        .trending__content
-            .trending__info
-                img(src="assets/img/icons/clock.svg", alt="")
-                span March 12, 2020
-            h3.trending__subtitle 10 tips for a small business digital marketing strategy
+    each item in trending_items
+        .trending__item
+            +post_small(item)
