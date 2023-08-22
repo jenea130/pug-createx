@@ -50,6 +50,7 @@ jQuery(document).ready(function ($) {
         $('.accordion__item').removeClass('active');
         $('.accordion__text').slideUp();
     }
+
     const slider = $(".studies__wrap")
 
     if (slider) {
@@ -134,5 +135,30 @@ jQuery(document).ready(function ($) {
     if (document.querySelector('.form select')) {
 
         $('.form select').styler()
+    }
+
+    const slider_blog = $(".slider-blog__wrap")
+
+    if (slider_blog) {
+        sliderBlog()
+    }
+
+    function sliderBlog() {
+        slider_blog.slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            speed: 1000,
+            arrows: false,
+            dots: false,
+            variableWidth: true
+        })
+        const slider_blog__arrow_prev = $('.slider-blog__arrow--prev')
+        const slider_blog__arrow_next = $('.slider-blog__arrow--next')
+        slider_blog__arrow_prev.on('click', function () {
+            slider_blog.slick('slickPrev')
+        })
+        slider_blog__arrow_next.on('click', function () {
+            slider_blog.slick('slickNext')
+        })
     }
 });
