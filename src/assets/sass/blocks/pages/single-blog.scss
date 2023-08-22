@@ -1,0 +1,12 @@
+.single-blog {
+    .page-intro {
+        height: 500px;
+        &__breadcrumbs {
+            margin-bottom: 42px;
+        }
+        &__title {
+            font-size: 56px;
+            line-height: 1.3;
+        }
+    }
+}
