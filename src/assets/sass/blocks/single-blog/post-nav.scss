@@ -1,0 +1,48 @@
+.post-nav {
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 23px;
+    }
+    &__link {
+        display: flex;
+        align-items: center;
+        &:last-of-type {
+            flex-direction: row-reverse;
+            svg {
+                margin-left: 8px;
+                margin-right: 0;
+                transform: rotate(180deg);
+            }
+        }
+        svg {
+            margin-right: 8px;
+        }
+        span {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--text-light);
+        }
+    }
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        flex: 0 0 342px;
+        &:last-of-type {
+            .post-small {
+                flex-direction: row-reverse;
+                text-align: right;
+                &__img {
+                    margin-left: 21px;
+                    margin-right: 0;
+
+                }
+                &__info {
+                    justify-content: flex-end;
+                }
+            }
+        }
+    }
+}

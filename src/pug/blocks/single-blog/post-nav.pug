@@ -1,0 +1,25 @@
+-
+    let post_nav_items = [
+        {
+            img: "assets/img/blog/trending/trending-3.jpg",
+            date: "March 12, 2020",
+            title: "10 tips for a small business digital marketing strategy"
+        },
+        {
+            img: "assets/img/blog/trending/trending-2.jpg",
+            date: "April 9, 2020",
+            title: "Why SEO Is All About Content Marketing?"
+        }
+    ]
+.post-nav
+    header.post-nav__header
+        .post-nav__link
+            include ../icons/icon-arrow-left
+            span Prev Post
+        .post-nav__link
+            include ../icons/icon-arrow-left
+            span Next Post
+    .post-nav__wrap
+        each item in post_nav_items
+            .post-nav__item
+                +post_small(item)
