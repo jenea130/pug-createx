@@ -1,0 +1,31 @@
+.published {
+    padding-bottom: 40px;
+    margin-bottom: 60px;
+    border-bottom: 1px solid #E5E8ED;
+    &__wrap {
+        display: flex;
+    }
+    &__item {
+        margin-right: 80px;
+        &:last-of-type {
+            .published__label {
+                opacity: 0;
+            }
+        }
+    }
+    &__label {
+        margin-bottom: 12px;
+        font-size: 16px;
+        color: var(--text-color);
+    }
+    &__content {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    &__text {
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--text-dark);
+    }
+}
