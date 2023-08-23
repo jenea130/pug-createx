@@ -150,7 +150,6 @@ jQuery(document).ready(function ($) {
             speed: 1000,
             arrows: false,
             dots: false,
-            variableWidth: true
         })
         const slider_blog__arrow_prev = $('.slider-blog__arrow--prev')
         const slider_blog__arrow_next = $('.slider-blog__arrow--next')
