@@ -1,0 +1,62 @@
+- 
+    const data = [
+        {
+            text: "2464 Royal Ln. Mesa,",
+            link: true
+        },
+        {
+            text: "New Jersey 45463, USA",
+            link: true
+        },
+        {
+            text: "See on the map",
+            link_dark: true
+        }
+    ];
+    const data_2 = [
+        {
+            text: "(405) 555-0128",
+            link: true
+        },
+        {
+            text: "(603) 555-0123",
+            link: true
+        }
+    ];
+    const data_3 = [
+        {
+            text: "hello@createx.com",
+            link: true
+        }
+    ];
+    const data_4 = [
+        {
+            text: "Mon-Fri: 9 am — 6 pm",
+            link: true
+        },
+        {
+            text: "Sat-Sun: days off",
+            link: true
+        }
+    ];
+.page-intro
+    img.page-intro__img(src="assets/img/contacts/contacts-bg.jpg" alt="")
+    .page-intro__content
+        .container
+            .page-intro__breadcrumbs
+                ul.breadcrumbs 
+                    li
+                        a(href="/") 
+                            include ../icons/icon-home
+                    li
+                        span Contacts
+            h1.page-intro__title Contacts
+            .page-intro__wrap
+                .page-intro__item
+                    +info('Visit us', 'assets/img/icons/icon-point.svg', data)
+                .page-intro__item
+                    +info('Call us', 'assets/img/icons/icon-phone.svg', data_2)
+                .page-intro__item
+                    +info('Talk to us', 'assets/img/icons/icon-comment.svg', data_3)
+                .page-intro__item
+                    +info('Working Hours', 'assets/img/icons/icon-watch.svg', data_4)

@@ -5,14 +5,14 @@ mixin info(label, path, data = [])
     .info__content
       h4.info__label= label
       ul.info__list
-      each data_item in data 
-        li 
-          if data_item.link
-            a(href="#")= data_item.text
-          else if data_item.link_dark
-            a.info--dark(href="#")= data_item.text
-          else
-            span= data_item.text
+        each data_item in data 
+          li 
+            if data_item.link
+              a(href="#")= data_item.text
+            else if data_item.link_dark
+              a.info--dark(href="#")= data_item.text
+            else
+              span= data_item.text
 
 mixin intro-form(label, input, btn, class_name)
   .intro-form(class=class_name) 
