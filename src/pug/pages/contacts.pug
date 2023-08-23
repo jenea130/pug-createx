@@ -1,6 +1,7 @@
 extends template
 
 block css
+    link(rel="stylesheet" type="text/css" href="assets/libs/range-slider-handles-labels-scales/docs/rangeSlider.css")
     link(rel="stylesheet" type="text/css" href="assets/css/my.css")
 
 block title
@@ -11,6 +12,8 @@ block content
         include ../includes/mixins
         include ../blocks/main-header
         include ../blocks/contacts/contacts-intro
+        .container
+            include ../blocks/contacts/contact-form
 
 
     include ../blocks/globals/footer
@@ -18,5 +21,6 @@ block content
 block scripts
     script(src="assets/libs/code.jquery.com_jquery-3.7.0.min.js")
     script(src="assets/libs/slick/slick/slick.min.js")
+    script(src="assets/libs/range-slider-handles-labels-scales/docs/rangeSlider.js")
     script(src="assets/jquery/custom-jquery.js")
     script(src="assets/js/dist/webpack.js")

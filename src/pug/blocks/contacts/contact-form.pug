@@ -1,0 +1,54 @@
+.contact-form
+    h2.contact-form__title.title Ready to get started?
+    .contact-form__wrap
+        .contact-form__content
+            .form.form--light
+                form(action='')
+                    .form__group
+                        h3.form__label Services
+                        .form__radio
+                            input(id="radio-1" type='radio' name="services" value="Social Media")
+                            label(for="radio-1") Social Media
+                            input(id="radio-2" type='radio' name="services" value="SEO")
+                            label(for="radio-2") SEO
+                            input(id="radio-3" type='radio' name="services" value="Research")
+                            label(for="radio-3") Research
+                            input(id="radio-4" type='radio' name="services" value="Content & PR")
+                            label(for="radio-4") Content & PR
+                            input(id="radio-5" type='radio' name="services" value="Payed Traffic")
+                            label(for="radio-5") Payed Traffic
+                    .form__wrap
+                        .form__group
+                            label(for='') First Name*
+                            input(type='text' placeholder='Your first name')
+                        .form__group
+                            label(for='') Last Name*
+                            input(type='text' placeholder='Your last name')
+                    .form__wrap
+                        .form__group
+                            label(for='') Email
+                            input(type='text' placeholder='Your working email')
+                        .form__group
+                            label(for='') Phone*
+                            input(type='text' placeholder='Your phone number')
+                    .form__wrap
+                        .form__group
+                            label(for='') Company
+                            input(type='text' placeholder='Your company name')
+                        .form__group
+                            label(for='') Position
+                            input(type='text' placeholder='Your position')
+                    .form__group
+                        h3.form__label Approx. budget
+                        .form__range
+                    .form__group
+                        label(for='') Additional Details
+                        textarea(name="" placeholder="Your message") 
+                    .form__footer.form__footer--flex
+                        .form__privacy
+                            input#checkbox.form__checkbox(type='checkbox')
+                            label(for='checkbox') I agree to receive communications from Createx SEO Agency
+                        button.form__submit.btn(disabled='true') Request a proposal
+
+        .contact-form__img
+            img(src="assets/img/contacts/contact-form/contact-form.svg", alt="")

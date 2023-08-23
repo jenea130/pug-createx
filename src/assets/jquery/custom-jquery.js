@@ -160,4 +160,49 @@ jQuery(document).ready(function ($) {
             slider_blog.slick('slickNext')
         })
     }
+
+    const form_range = $(".form__range");
+
+    if (form_range) {
+        formRange();
+    }
+    function formRange() {
+        form_range.rangeSlider(
+            {
+                // or 'vertical'
+                direction: "horizontal",
+
+                // or 'interval'
+                type: "interval",
+
+                // or 'red'
+                skin: "green",
+
+                // shows settings panel
+                settings: false,
+
+                // shows range bar
+                bar: true,
+
+                // shows labels
+                tip: true,
+
+                // shows scales
+                scale: true
+            },
+            {
+                // min value
+                min: 1,
+
+                // max value
+                max: 100,
+
+                // step size
+                step: 25,
+
+                // predefined range
+                values: [32, 81]
+            }
+        );
+    }
 });

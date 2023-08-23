@@ -1,0 +1,31 @@
+.contact-form {
+    margin-bottom: 148px;
+
+    &__title {
+        margin-bottom: 42px;
+    }
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__content {
+        width: 50%;
+    }
+
+    &__img {
+        position: relative;
+        top: 46px;
+        left: 186px;
+        width: 50%;
+    }
+
+    .form {
+        &__label {}
+
+        &__radio {
+            margin-bottom: 30px;
+        }
+    }
+}
