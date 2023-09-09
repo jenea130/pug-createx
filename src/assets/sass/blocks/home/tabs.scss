@@ -1,91 +1,106 @@
 .tabs {
-  margin-bottom: 121px;
+	margin-bottom: 12.1rem;
 }
 
 .tabs__title {
-  margin-bottom: 43px;
-  text-align: center;
+	margin-bottom: 4.3rem;
+	text-align: center;
 }
 
 .tabs__header {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 60px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 6rem;
+  @media screen and (max-width: 992px) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 2rem;
+  }
 }
 
 .tabs__item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 1;
-  font-size: 16px;
-  font-weight: 700;
-  height: 46px;
-  border-radius: 4px;
-  border: 1px solid transparent;
-  transition: all 0.4s;
-  cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+	font-size: 1.6rem;
+	font-weight: 700;
+	height: 4.6rem;
+	border-radius: 4px;
+	border: 1px solid transparent;
+	transition: all 0.4s;
+	cursor: pointer;
+  @media screen and (max-width: 992px) {
+    margin-bottom: 3.2rem;
+    flex: 0 0 18rem;
+  }
 }
 
 .tabs__item.active,
 .tabs__item:hover {
-  border-color: #7772f1;
+	border-color: #7772f1;
 }
 
 .tabs__body {
-  position: relative;
-  height: 475px;
+	position: relative;
+	height: 47.5rem;
 }
 
 .tabs__wrap {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  height: 100%;
-  transition: all 0.4s;
-  opacity: 0;
-  z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: 100%;
+	transition: all 0.4s;
+	opacity: 0;
+	z-index: 1;
+  @media screen and (max-width: 992px) {
+    display: block;
+  }
 }
 
 .tabs__wrap.active {
-  opacity: 1;
-  z-index: 2;
+	opacity: 1;
+	z-index: 2;
 }
 
 .tabs__content {
-  flex: 0 0 390px;
+	flex: 0 0 39rem;
+  @media screen and (max-width: 992px) {
+    margin-bottom: 4.4rem;
+  }
 }
 
 .tabs__subtitle {
-  margin-bottom: 27px;
-  font-size: 28px;
-  font-weight: 700;
-  line-height: 1.5;
-  color: var(--text-dark);
+	margin-bottom: 2.7rem;
+	font-size: 2.8rem;
+	font-weight: 700;
+	line-height: 1.5;
+	color: var(--text-dark);
 }
 
 .tabs__list {
-  margin-bottom: 53px;
+	margin-bottom: 5.3rem;
 }
 
 .tabs__list li {
-  display: flex;
-  align-items: center;
-  margin-bottom: 19px;
-  font-size: 16px;
+	display: flex;
+	align-items: center;
+	margin-bottom: 1.9rem;
+	font-size: 1.6rem;
 }
 
 .tabs__list svg {
-  margin-right: 12px;
+	margin-right: 1.2rem;
 }
 
 .tabs__footer .btn:first-of-type {
-  margin-right: 16px;
+	margin-right: 1.6rem;
 }
 
 .tabs__img {
-  flex: 0 0 710px;
+	flex: 0 0 71rem;
 }
