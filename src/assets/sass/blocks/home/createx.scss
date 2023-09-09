@@ -1,5 +1,8 @@
 .createx {
 	margin-bottom: 17.5rem;
+  @media screen and (max-width: 992px) {
+    margin-bottom: 10rem;
+  }
 }
 
 .createx__wrap {
