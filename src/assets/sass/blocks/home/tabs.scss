@@ -44,6 +44,9 @@
 .tabs__body {
 	position: relative;
 	height: 47.5rem;
+	@media screen and (max-width: 992px) {
+		height: 110rem;
+	}
 }
 
 .tabs__wrap {
