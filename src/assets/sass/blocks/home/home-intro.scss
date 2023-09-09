@@ -9,6 +9,9 @@
     height: 70rem;
     padding-top: 18rem;
   }
+  @media screen and (max-width: 576px) {
+    margin-bottom: 8rem;
+  }
 }
 
 .home-intro__img {

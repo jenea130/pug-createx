@@ -1,23 +1,31 @@
 .top-features {
-    margin: 0 -20px;
+    margin: 0 -2rem;
     display: flex;
     flex-wrap: wrap;
-
+    @media screen and (max-width: 992px) {
+        margin: 0;
+    }
+    @media screen and (max-width: 576px) {
+        display: block;
+    }
 
     &__item {
         display: flex;
         align-items: center;
-        margin: 0 20px 30px;
-        flex: 0 0 calc(50% - 40px);
+        margin: 0 2rem 3rem;
+        flex: 0 0 calc(50% - 4rem);
+        @media screen and (max-width: 576px) {
+            margin: 0 0 3rem;
+        }
     }
 
     &__icon {
-        flex: 0 0 75px;
-        margin-right: 16px;
+        flex: 0 0 7.5rem;
+        margin-right: 1.6rem;
     }
 
     &__label {
-        font-size: 14px;
+        font-size: 1.4rem;
         line-height: 1.5;
     }
 }
