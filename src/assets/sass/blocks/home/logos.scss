@@ -2,5 +2,27 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 176px;
+  margin-bottom: 17.6rem;
+
+  @media screen and (max-width: 992px) {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0 -1.6rem;
+  }
+
+  &__item {
+    @media screen and (max-width: 992px) {
+      margin: 0 1.6rem 1.6rem;
+      flex: 0 0 calc(100% / 4 - 3.2rem);
+    }
+
+    @media screen and (max-width: 768px) {
+      flex: 0 0 calc(100% / 3 - 3.2rem);
+
+    }
+    @media screen and (max-width: 576px) {
+      flex: 0 0 calc(100% / 2 - 3.2rem);
+
+    }
+  }
 }
