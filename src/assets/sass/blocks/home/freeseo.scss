@@ -2,6 +2,9 @@
 	margin-bottom: 18.3rem;
   padding: 8rem 2rem;
 	background: var(--text-dark);
+  @media screen and (max-width: 992px) {
+    margin-bottom: 8rem;
+  }
 }
 .freeseo__wrap {
 	display: flex;
