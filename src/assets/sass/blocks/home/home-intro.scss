@@ -1,9 +1,14 @@
 .home-intro {
   position: relative;
-  height: 1080px;
-  padding-top: 272px;
-  margin-bottom: 120px;
+  height: 108rem;
+  padding-top: 27.2rem;
+  margin-bottom: 12rem;
   z-index: 1;
+
+  @media screen and (max-width: 992px) {
+    height: 70rem;
+    padding-top: 18rem;
+  }
 }
 
 .home-intro__img {
@@ -14,6 +19,10 @@
   height: 100%;
   object-fit: cover;
   z-index: 1;
+
+  @media screen and (max-width: 768px) {
+    object-position: 0% 50%;
+  }
 }
 
 .home-intro .container {
@@ -22,33 +31,51 @@
 }
 
 .home-intro__title {
-  margin-bottom: 43px;
-  max-width: 810px;
-  font-size: 72px;
+  margin-bottom: 4.3rem;
+  max-width: 81rem;
+  font-size: 7.2rem;
   font-weight: 900;
   line-height: 1.3;
-  letter-spacing: 1.6px;
+  letter-spacing: 0.16rem;
   color: white;
+
+  @media screen and (max-width: 992px) {
+    font-size: 5.6rem;
+  }
+  @media screen and (max-width: 768px) {
+    // font-size: 5.6rem;
+    max-width: initial;
+    text-align: center;
+  }
+  @media screen and (max-width: 400px) {
+    font-size: 4rem;
+  }
 }
 
 .home-intro__title strong {
   font-weight: 900;
   color: var(--accent);
-  letter-spacing: 0.6px;
+  letter-spacing: 0.06rem;
 }
 
 .home-intro__actions {
   display: flex;
   align-items: center;
-  gap: 27px;
-  margin-bottom: 372px;
+  gap: 2.7rem;
+  margin-bottom: 37.2rem;
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+  }
+  @media screen and (max-width: 576px) {
+    flex-direction: column;
+  }
 }
 
 .home-intro__play span {
   position: relative;
-  bottom: 35px;
-  left: -5px;
-  font-size: 16px;
+  bottom: 3.5rem;
+  left: -0.5rem;
+  font-size: 1.6rem;
   font-weight: 700;
   color: white;
 }

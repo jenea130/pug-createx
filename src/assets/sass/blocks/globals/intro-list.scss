@@ -1,24 +1,30 @@
 .intro-list {
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width: 992px) {
+        display: none;
+    }
 
     span {
         position: relative;
-        margin-left: 20px;
-        bottom: 14px;
-        left: 10px;
-        font-size: 20px;
+        margin-left: 2rem;
+        bottom: 1.4rem;
+        left: 1rem;
+        font-size: 2rem;
         font-weight: 700;
         color: white;
+    }
+    li {
+        flex: 1;
     }
 
     li:not(:first-of-type) ::before {
         content: "";
         position: absolute;
-        left: -155px;
-        bottom: -10px;
-        width: 1px;
-        height: 40px;
+        left: -15.5rem;
+        bottom: -1rem;
+        width: 0.1rem;
+        height: 4rem;
         background: linear-gradient(315deg,
                 rgba(218, 219, 221, 0) 0%,
                 rgba(218, 219, 221, 0.5) 12.33%,
