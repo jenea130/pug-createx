@@ -1,5 +1,8 @@
 .tabs {
 	margin-bottom: 12.1rem;
+	@media screen and (max-width: 576px) {
+		margin-bottom: 5rem;
+	}
 }
 
 .tabs__title {
@@ -11,11 +14,11 @@
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 6rem;
-  @media screen and (max-width: 992px) {
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    margin-bottom: 2rem;
-  }
+	@media screen and (max-width: 992px) {
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		margin-bottom: 2rem;
+	}
 }
 
 .tabs__item {
@@ -30,10 +33,10 @@
 	border: 1px solid transparent;
 	transition: all 0.4s;
 	cursor: pointer;
-  @media screen and (max-width: 992px) {
-    margin-bottom: 3.2rem;
-    flex: 0 0 18rem;
-  }
+	@media screen and (max-width: 992px) {
+		margin-bottom: 3.2rem;
+		flex: 0 0 18rem;
+	}
 }
 
 .tabs__item.active,
@@ -45,7 +48,8 @@
 	position: relative;
 	height: 47.5rem;
 	@media screen and (max-width: 992px) {
-		height: 110rem;
+		// height: 110rem;
+		height: auto;
 	}
 }
 
@@ -60,21 +64,26 @@
 	transition: all 0.4s;
 	opacity: 0;
 	z-index: 1;
-  @media screen and (max-width: 992px) {
-    display: block;
-  }
+	@media screen and (max-width: 992px) {
+		display: none;
+		position: static;
+		opacity: 1;
+	}
 }
 
 .tabs__wrap.active {
 	opacity: 1;
 	z-index: 2;
+	@media screen and (max-width: 992px) {
+		display: block;
+	}
 }
 
 .tabs__content {
 	flex: 0 0 39rem;
-  @media screen and (max-width: 992px) {
-    margin-bottom: 4.4rem;
-  }
+	@media screen and (max-width: 992px) {
+		margin-bottom: 4.4rem;
+	}
 }
 
 .tabs__subtitle {

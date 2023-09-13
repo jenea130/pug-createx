@@ -64,7 +64,7 @@ jQuery(document).ready(function ($) {
             speed: 1000,
             arrows: false,
             dots: false,
-            variableWidth: true
+            // variableWidth: true
         })
         const studies__arrow_prev = $('.studies__arrow--prev')
         const studies__arrow_next = $('.studies__arrow--next')
