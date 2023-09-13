@@ -18,5 +18,5 @@ window.addEventListener("DOMContentLoaded", function () {
 		videoPlay();
 	}
 
-	headerScroll();
+	// headerScroll();
 });
