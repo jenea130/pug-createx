@@ -75,8 +75,8 @@
   color: var(--accent);
 }
 .card__list {
-  margin-left: 100px;
-  margin-bottom: 36px;
+  margin: 0 auto 3.6rem;
+  max-width: 200px;
   text-align: center;
 }
 .card__list li {

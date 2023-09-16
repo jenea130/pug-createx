@@ -9,6 +9,9 @@
   margin-bottom: 59px;
   display: flex;
   justify-content: center;
+  @media screen and (max-width: 576px) {
+    gap: 10px;
+  }
 }
 .plans__btn {
   position: relative;
@@ -24,6 +27,9 @@
   transition: all 0.4s;
   outline: none;
   cursor: pointer;
+  @media screen and (max-width: 576px) {
+    flex: 0 0 150px;
+  }
 }
 .plans__btn strong {
   font-size: 16px;
@@ -31,9 +37,15 @@
 }
 .plans__btn:first-of-type {
   right: -20px;
+  @media screen and (max-width: 576px) {
+    right: 0;
+  }
 }
 .plans__btn:last-of-type {
   left: -20px;
+  @media screen and (max-width: 576px) {
+    left: 0;
+  }
 }
 .plans__btn.active,
 .plans__btn:hover {
@@ -44,6 +56,9 @@
 .plans__body {
   position: relative;
   height: 540px;
+  @media screen and (max-width: 768px) {
+    height: auto;
+  }
 }
 .plans__wrap {
   position: absolute;
@@ -51,16 +66,33 @@
   left: 0;
   display: flex;
   justify-content: space-between;
+  gap: 3rem;
   width: 100%;
   height: 100%;
-  transition: all 0.4s;
+  transition: all 0.8s;
   opacity: 0;
   z-index: 1;
+  @media screen and (max-width: 768px) {
+    position: static;
+    display: none;
+    margin: 0 auto;
+    max-width: 400px;
+    opacity: 1;
+  }
 }
 .plans__wrap.active {
   opacity: 1;
   z-index: 2;
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
 }
 .plans__item {
-  flex: 0 0 390px;
+  flex: 1;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 3.2rem;
+  }
+}
+* {
+  //border: 1px solid red;
 }
