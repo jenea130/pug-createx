@@ -1,6 +1,9 @@
 .advantages {
-	padding-top: 46px;
-	&__item {
-		margin-bottom: 158px;
-	}
+  padding-top: 4.60rem;
+  &__item {
+    margin-bottom: 15.80rem;
+    @media screen and (max-width: 768px) {
+      margin-bottom: 8.00rem;
+    }
+  }
 }
