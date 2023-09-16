@@ -1,65 +1,62 @@
 .intro-form {
-    margin: 0 auto;
-    max-width: 600px;
-
-    &.intro-form--dark {
-        .intro-form__label {
-            color: var(--text-light);
-        }
-
-        .intro-form__input {
-            border-radius: 4px;
-            border: 1px solid var(--gray-400, #D7DADD);
-            background: var(--white, #FFF);
-
-            &::placeholder {
-
-                color: #9a9ca5;
-            }
-        }
-
+  margin: 0 auto;
+  max-width: 60rem;
+  &.intro-form--dark {
+    .intro-form__label {
+      color: var(--text-light);
     }
-
-    &__label {
-        margin-bottom: 8px;
-        text-align: left;
-        font-size: 16px;
-        color: white;
+    .intro-form__input {
+      border-radius: 0.40rem;
+      border: 1px solid var(--gray-400, #D7DADD);
+      background: var(--white, #FFF);
+      &::placeholder {
+        color: #9a9ca5;
+      }
     }
-
-    &__wrap {
-        display: flex;
-        align-items: center;
-        height: 52px;
+  }
+  &__label {
+    margin-bottom: 0.80rem;
+    text-align: left;
+    font-size: 1.60rem;
+    color: white;
+  }
+  &__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5.20rem;
+  }
+  &__input {
+    height: 100%;
+    flex: 0 0 38.90rem;
+    font-family: var(--font-1);
+    font-size: 1.60rem;
+    font-weight: 400;
+    text-indent: 1.60rem;
+    border-radius: 0.40rem 0 0 0.40rem;
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    color: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.12);
+    @media screen and (max-width: 576px) {
+      flex: 1;
     }
-
-    &__input {
-        height: 100%;
-        flex: 0 0 389px;
-        font-family: var(--font-1);
-        font-size: 16px;
-        font-weight: 400;
-        text-indent: 16px;
-        border-radius: 4px 0 0 4px;
-        border: 1px solid rgba(255, 255, 255, 0.20);
-        color: rgba(255, 255, 255, 0.6);
-        background: rgba(255, 255, 255, 0.12);
+  }
+  &__input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex: 0 0 21.10rem;
+    font-size: 1.60rem;
+    font-weight: 700;
+    color: white;
+    background: var(--accent);
+    border-radius: 0 0.40rem 0.40rem 0;
+    @media screen and (max-width: 576px) {
+      flex: 0 0 14rem;
     }
-
-    &__input::placeholder {
-        color: rgba(255, 255, 255, 0.6);
-    }
-
-    &__btn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-        flex: 0 0 211px;
-        font-size: 16px;
-        font-weight: 700;
-        color: white;
-        background: var(--accent);
-        border-radius: 0 4px 4px 0;
-    }
+  }
 }
