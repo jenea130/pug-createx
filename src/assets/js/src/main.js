@@ -3,6 +3,7 @@ import headerScroll from "./modules/scroll/headerScroll";
 import studiesClass from "./modules/studies/studiesClass";
 import videoPlay from "./modules/video/videoPlay";
 import toggleMenu from "./modules/header/toggleMenu";
+import scrollToHeader from "./modules/scroll/scrollToHeader";
 
 window.addEventListener("DOMContentLoaded", function () {
 
@@ -21,4 +22,5 @@ window.addEventListener("DOMContentLoaded", function () {
 
 	headerScroll();
 	toggleMenu();
+	scrollToHeader();
 });
