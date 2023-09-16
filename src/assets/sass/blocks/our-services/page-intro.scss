@@ -1,77 +1,77 @@
 .page-intro {
-    margin-bottom: 100px;
+  margin-bottom: 10.00rem;
+  position: relative;
+  height: 59.50rem;
+  @media screen and (max-width: 576px) {
+    padding-bottom: 6.4rem;
+    height: auto;
+  }
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+  &__content {
     position: relative;
-    height: 595px;
-
-    &__img {
+    padding-top: 15.20rem;
+    text-align: center;
+    z-index: 2;
+  }
+  &__breadcrumbs {
+    margin-bottom: 3.20rem;
+  }
+  &__logo {
+    margin-bottom: 2.40rem;
+  }
+  &__title {
+    margin: 0 auto 2.90rem;
+    max-width: 1020px;
+    font-size: 7.20rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: white;
+    @media screen and (max-width: 576px) {
+      font-size: 4rem;
+    }
+  }
+  &__text {
+    margin: 0 auto 4.00rem;
+    max-width: 810px;
+    font-size: 2.00rem;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.5;
+  }
+  &__wrap {
+    display: flex;
+    justify-content: center;
+  }
+  &__item {
+    position: relative;
+    padding: 0 4.00rem;
+    &:not(:last-of-type) {
+      &::after {
+        content: '';
         position: absolute;
         top: 0;
-        left: 0;
-        width: 100%;
+        right: 0;
+        width: 1px;
         height: 100%;
-        object-fit: cover;
-        z-index: 1;
+        opacity: 0.4;
+        background: linear-gradient(315deg, rgba(218, 219, 221, 0.00) 0%, rgba(218, 219, 221, 0.50) 12.33%, #DADBDD 51.91%, rgba(218, 219, 221, 0.50) 87.85%, rgba(218, 219, 221, 0.00) 100%);
+      }
     }
-
-    &__content {
-        position: relative;
-        padding-top: 152px;
-        text-align: center;
-        z-index: 2;
+  }
+  &__footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4.00rem;
+    @media screen and (max-width: 576px) {
+      flex-direction: column;
     }
-
-    &__breadcrumbs {
-        margin-bottom: 32px;
-    }
-
-    &__logo {
-        margin-bottom: 24px;
-    }
-
-    &__title {
-        margin: 0 auto 29px;
-        max-width: 1020px;
-        font-size: 72px;
-        font-weight: 900;
-        letter-spacing: 1px;
-        color: white;
-    }
-
-    &__text {
-        margin: 0 auto 40px;
-        max-width: 810px;
-        font-size: 20px;
-        color: rgba(255, 255, 255, 0.6);
-        line-height: 1.5;
-    }
-
-    &__wrap {
-        display: flex;
-        justify-content: center;
-    }
-
-    &__item {
-        position: relative;
-        padding: 0 40px;
-
-        &:not(:last-of-type) {
-            &::after {
-                content: '';
-                position: absolute;
-                top: 0;
-                right: 0;
-                width: 1px;
-                height: 100%;
-                opacity: 0.4;
-                background: linear-gradient(315deg, rgba(218, 219, 221, 0.00) 0%, rgba(218, 219, 221, 0.50) 12.33%, #DADBDD 51.91%, rgba(218, 219, 221, 0.50) 87.85%, rgba(218, 219, 221, 0.00) 100%);
-            }
-        }
-    }
-
-    &__footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 40px;
-    }
+  }
 }
