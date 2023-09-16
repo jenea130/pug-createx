@@ -123,15 +123,24 @@
 .footer-bottom__wrap {
   display: flex;
   justify-content: space-between;
+  @media screen and (max-width: 768px) {
+    align-items: flex-start;
+  }
 }
 .footer-bottom__logos {
   display: flex;
   gap: 2.40rem;
+  @media screen and (max-width: 768px) {
+    flex-wrap: wrap;
+  }
 }
 .footer-bottom__navigation {
   display: flex;
   align-items: flex-end;
   padding-bottom: 0.30rem;
+  @media screen and (max-width: 768px) {
+    flex: 0 0 110px;
+  }
 }
 .footer-bottom__navigation span {
   font-size: 1.40rem;
