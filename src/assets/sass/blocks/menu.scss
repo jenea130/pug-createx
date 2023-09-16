@@ -25,6 +25,9 @@
     padding: 10px 0;
     font-size: 24px;
   }
+  &.active {
+    color: var(--accent);
+  }
 }
 .main-menu__item {
   margin-right: 40px;
