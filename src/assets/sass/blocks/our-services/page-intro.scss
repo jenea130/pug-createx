@@ -49,10 +49,19 @@
   &__wrap {
     display: flex;
     justify-content: center;
+    @media screen and (max-width: 992px) {
+      flex-wrap: wrap;
+    }
+    @media screen and (max-width: 576px) {
+      display: block;
+    }
   }
   &__item {
     position: relative;
     padding: 0 4.00rem;
+    @media screen and (max-width: 576px) {
+      padding: 0;
+    }
     &:not(:last-of-type) {
       &::after {
         content: '';
@@ -63,6 +72,9 @@
         height: 100%;
         opacity: 0.4;
         background: linear-gradient(315deg, rgba(218, 219, 221, 0.00) 0%, rgba(218, 219, 221, 0.50) 12.33%, #DADBDD 51.91%, rgba(218, 219, 221, 0.50) 87.85%, rgba(218, 219, 221, 0.00) 100%);
+        @media screen and (max-width: 992px) {
+          display: none;
+        }
       }
     }
   }

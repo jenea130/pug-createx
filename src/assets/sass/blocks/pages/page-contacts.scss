@@ -1,26 +1,31 @@
 .page-contacts {
-    .page-intro {
-        height: 586px;
-
-        &__breadcrumbs {
-            margin-bottom: 46px;
-        }
-
-        &__title {
-            margin-bottom: 80px;
-        }
-
-        &__item {
-            width: 25%;
-
-            &:first-of-type {
-                padding-left: 0;
-            }
-
-            &:last-of-type {
-                padding-right: 0;
-            }
-        }
-
+  .page-intro {
+    height: 58.60rem;
+    @media screen and (max-width: 992px) {
+      padding-bottom: 8rem;
+      height: auto;
     }
+    &__breadcrumbs {
+      margin-bottom: 4.60rem;
+    }
+    &__title {
+      margin-bottom: 8.00rem;
+    }
+    &__item {
+      width: 25%;
+      @media screen and (max-width: 992px) {
+        margin-bottom: 3.2rem;
+        width: 50%;
+      }
+      @media screen and (max-width: 576px) {
+        width: 100%;
+      }
+      &:first-of-type {
+        padding-left: 0;
+      }
+      &:last-of-type {
+        padding-right: 0;
+      }
+    }
+  }
 }
