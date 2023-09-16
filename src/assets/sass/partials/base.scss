@@ -48,7 +48,7 @@ body::after {
     position: absolute;
     top: 0;
     left: 50%;
-    // display: none;
+     display: none;
     width: 1px;
     height: 100vh;
     background: green;
@@ -67,10 +67,9 @@ li {
 
 .container {
     margin: 0 auto;
-    padding: 0 1.5rem;
+    padding: 0 15px;
     max-width: 1260px;
     width: 100%;
-    /* outline: 1px solid red; */
 }
 
 .container-big {

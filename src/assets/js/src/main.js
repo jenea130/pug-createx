@@ -2,6 +2,7 @@ import caseStudiesFilter from "./modules/filter/caseStudiesFilter";
 import headerScroll from "./modules/scroll/headerScroll";
 import studiesClass from "./modules/studies/studiesClass";
 import videoPlay from "./modules/video/videoPlay";
+import toggleMenu from "./modules/header/toggleMenu";
 
 window.addEventListener("DOMContentLoaded", function () {
 
@@ -18,5 +19,6 @@ window.addEventListener("DOMContentLoaded", function () {
 		videoPlay();
 	}
 
-	// headerScroll();
+	headerScroll();
+	toggleMenu();
 });
