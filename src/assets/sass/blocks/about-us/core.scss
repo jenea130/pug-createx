@@ -1,33 +1,39 @@
 .core {
-    margin-bottom: 180px;
+    margin-bottom: 18.00rem;
 
     &__wrap {
         display: flex;
-        gap: 80px;
+        gap: 8.00rem;
+        @media screen and (max-width: 768px) {
+            display: block;
+        }
     }
 
     &__title {
-        flex: 0 0 340px;
+        flex: 0 0 34.00rem;
+        @media screen and (max-width: 768px) {
+            margin-bottom: 6.4rem;
+        }
     }
 
     &__items {
         display: flex;
         flex-wrap: wrap;
-        gap: 48px 80px;
+        gap: 4.80rem 8.00rem;
     }
 
     &__item {
-        flex: 0 0 340px;
+        flex: 0 0 34.00rem;
     }
 
     &__img {
-        margin-bottom: 28px;
-        height: 48px;
+        margin-bottom: 2.80rem;
+        height: 4.80rem;
     }
 
     &__subtitle {
-        margin-bottom: 8px;
-        font-size: 20px;
+        margin-bottom: 0.80rem;
+        font-size: 2.00rem;
         font-weight: 700;
         color: var(--text-dark);
     }
