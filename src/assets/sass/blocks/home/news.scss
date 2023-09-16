@@ -23,7 +23,7 @@
   }
   &:first-of-type {
     @media screen and (max-width: 992px) {
-        flex: 0 0 100%;
+        flex: 0 0 calc(100% - 3rem);
     }
   }
 }
