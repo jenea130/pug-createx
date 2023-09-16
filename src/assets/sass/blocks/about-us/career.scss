@@ -1,29 +1,47 @@
 .career {
-    margin-bottom: 180px;
-    &__wrap {
-        display: flex;
-        justify-content: space-between;
+  margin-bottom: 18.00rem;
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 992px) {
+      flex-direction: column-reverse;
     }
-    &__img {
-        flex: 0 0 450px;
+  }
+  &__img {
+    flex: 0 0 45.00rem;
+    @media screen and (max-width: 992px) {
+      flex: 0 0 100%;
     }
-    &__content {
-        padding-top: 62px;
-        flex: 0 0 604px;
+    svg {
+      @media screen and (max-width: 576px) {
+        width: 100%;
+      }
     }
-    &__title {
-        margin-bottom: 40px;
+  }
+  &__content {
+    padding-top: 6.20rem;
+    flex: 0 0 60.40rem;
+    @media screen and (max-width: 992px) {
+      margin-bottom: 6.4rem;
+      flex: 0 0 100%;
     }
-    &__text {
-        margin-bottom: 60px;
-        font-size: 20px;
-        line-height: 1.5;
+    @media screen and (max-width: 400px) {
+      margin-bottom: 0;
     }
-    .btn {
-        svg {
-            position: relative;
-            top: 3px;
-            right: -6px;
-        }
+  }
+  &__title {
+    margin-bottom: 4.00rem;
+  }
+  &__text {
+    margin-bottom: 6.00rem;
+    font-size: 2.00rem;
+    line-height: 1.5;
+  }
+  .btn {
+    svg {
+      position: relative;
+      top: 0.30rem;
+      right: -0.60rem;
     }
+  }
 }
