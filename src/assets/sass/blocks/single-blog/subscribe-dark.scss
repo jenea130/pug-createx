@@ -1,70 +1,62 @@
 .subscribe-dark {
-    margin-bottom: 120px;
-    padding: 80px 0 39px;
-    background: var(--text-dark);
-
-    &__wrap {
-        display: flex;
-        justify-content: space-between;
+  margin-bottom: 12.00rem;
+  padding: 8.00rem 0 3.90rem;
+  background: var(--text-dark);
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 576px) {
+      display: block;
     }
-
-    &__content {
-        flex: 0 0 495px;
+  }
+  &__content {
+    flex: 0 0 49.50rem;
+    @media screen and (max-width: 576px) {
+      margin-bottom: 6.4rem;
     }
-
-    &__img {
-        position: relative;
-        top: -27px;
-        right: 0;
+  }
+  &__img {
+    position: relative;
+    top: -2.70rem;
+    right: 0;
+  }
+  .intro-form {
+    &__input {
+      flex: 2;
+      outline: none;
     }
-
-    .intro-form {
-        &__input {
-            flex: 2;
-            outline: none;
-        }
-
-        &__btn {
-            flex: 1;
-        }
+    &__btn {
+      flex: 1;
     }
-
-    &__title {
-        margin-bottom: 40px;
-        color: white;
+  }
+  &__title {
+    margin-bottom: 4.00rem;
+    color: white;
+  }
+  &__text {
+    margin-bottom: 3.50rem;
+    font-size: 2.00rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: white;
+  }
+  .intro-form {
+    &__label {
+      margin-bottom: 1.10rem;
     }
-
-    &__text {
-        margin-bottom: 35px;
-        font-size: 20px;
-        font-weight: 400;
-        line-height: 1.5;
-        color: white;
+  }
+  &__form {
+    margin-bottom: 3.20rem;
+  }
+  .form__privacy label {
+    padding-right: 0;
+    font-size: 1.60rem;
+    color: white;
+    &::before {
+      top: 0.60rem;
     }
-
-    .intro-form {
-        &__label {
-            margin-bottom: 11px;
-        }
+    &::after {
+      top: 1.00rem;
     }
-
-    &__form {
-        margin-bottom: 32px;
-
-    }
-
-    .form__privacy label {
-        padding-right: 0;
-        font-size: 16px;
-        color: white;
-
-        &::before {
-            top: 6px;
-        }
-
-        &::after {
-            top: 10px;
-        }
-    }
-
+  }
 }
