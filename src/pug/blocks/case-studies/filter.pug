@@ -1,6 +1,6 @@
 //- TODO: pixel perfect
-.filter 
-    .filter__header 
+.filter
+    .filter__header
         button.filter__btn.active(data-target="") All case studies
         button.filter__btn(data-target="social-media") Social Media
         button.filter__btn(data-target="seo") Seo
@@ -8,20 +8,6 @@
         button.filter__btn(data-target="content-pr") Content & PR
         button.filter__btn(data-target="payed-traffic") Payed Traffic
     .filter__wrap
-        .filter__item(data-filter="social-media")
-            .item-filter
-                .item-filter__picture
-                    img.item-filter__img(src="assets/img/case-studies/filter/filter-1.jpg" alt="")
-                    .item-filter__info
-                        img.item-filter__logo(src="assets/img/case-studies/filter/filter-logo-1.png" alt="")
-                        .item-filter__label Charity organisation
-                .item-filter__content 
-                    .ranges
-                        .ranges__wrap
-                            +range("75 100", "90%", "Engagement", "#F89828" )
-                            +range("100 100", "100%", "Deliverability", "#03CEA4" )
-                    .item-filter__text.text Createx SEO Agency helped JNational Inc. increase their MQL to SQL conversion rate by 300%.
-                    +link("single-case-studies.html", "View case")
         .filter__item(data-filter="seo")
             .item-filter
                 .item-filter__picture
@@ -36,6 +22,24 @@
                             +range("80 100", "1400", "Target investors")
                     .item-filter__text.text With an advanced A/B testing and usability analysis, Createx SEO Agency helps Del Mar see a 400% increase in conversion rate.
                     +link("single-case-studies.html", "View case")
+
+
+        .filter__item(data-filter="social-media")
+            .item-filter
+                .item-filter__picture
+                    img.item-filter__img(src="assets/img/case-studies/filter/filter-1.jpg" alt="")
+                    .item-filter__info
+                        img.item-filter__logo(src="assets/img/case-studies/filter/filter-logo-1.png" alt="")
+                        .item-filter__label Charity organisation
+                .item-filter__content
+                    .ranges
+                        .ranges__wrap
+                            +range("75 100", "90%", "Engagement", "#F89828" )
+                            +range("100 100", "100%", "Deliverability", "#03CEA4" )
+                    .item-filter__text.text Createx SEO Agency helped JNational Inc. increase their MQL to SQL conversion rate by 300%.
+                    +link("single-case-studies.html", "View case")
+
+
         .filter__item(data-filter="research")
             .item-filter
                 .item-filter__picture
@@ -92,6 +96,6 @@
                             +range("80 100", "$12,000", "Increase per month")
                     .item-filter__text.text We helped Dove company break through a noisy industry and better understand their buyer's journey.
                     +link("single-case-studies.html", "View case")
-    .filter__more 
+    .filter__more
         include ../icons/icon-more
         span Load more

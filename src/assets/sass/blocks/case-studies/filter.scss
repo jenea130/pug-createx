@@ -1,57 +1,70 @@
 .filter {
-    padding-bottom: 100px;
-    &__header {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 60px;
+  padding-bottom: 10.00rem;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6.00rem;
+    @media screen and (max-width: 768px) {
+      justify-content: flex-start;
+      flex-wrap: wrap;
     }
-
-    &__btn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex: 1;
-        font-family: var(--font-1);
-        font-size: 16px;
-        font-weight: 700;
-        color: #9a9ca5;
-        height: 46px;
-        border-radius: 4px;
-        border: 1px solid transparent;
-        background: white;
-        transition: all 0.4s;
-        cursor: pointer;
-
-        &.active,
-        &:hover {
-            color: var(--accent);
-            border-color: var(--accent);
-        }
+  }
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    font-family: var(--font-1);
+    font-size: 1.60rem;
+    font-weight: 700;
+    color: #9a9ca5;
+    height: 4.60rem;
+    border-radius: 0.40rem;
+    border: 1px solid transparent;
+    background: white;
+    transition: all 0.4s;
+    cursor: pointer;
+    @media screen and (max-width: 768px) {
+      margin-bottom: 3.2rem;
+      flex: initial;
+      width: 33.33%;
     }
-
-    &__wrap {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 48px 30px;
-        margin-bottom: 60px;
+    @media screen and (max-width: 400px) {
+      width: 50%;
     }
-
-    &__item {
-        flex: 0 0 600px;
+    &.active,
+    &:hover {
+      color: var(--accent);
+      border-color: var(--accent);
     }
-
-    &__more {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        font-size: 16px;
-        font-weight: 700;
-        color: var(--text-light);
-
-        svg {
-            margin-right: 10px;
-        }
+  }
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1.5rem 6rem;
+    @media screen and (max-width: 768px) {
+      display: block;
+      margin: 0 0 6rem;
     }
-
+  }
+  &__item {
+    margin: 0 1.5rem 4.8rem;
+    flex: 0 0 calc(50% - 3rem);
+    @media screen and (max-width: 768px) {
+      margin: 0 0 4.8rem;
+      max-width: 500px;
+    }
+  }
+  &__more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 1.60rem;
+    font-weight: 700;
+    color: var(--text-light);
+    svg {
+      margin-right: 1.00rem;
+    }
+  }
 }
