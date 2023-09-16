@@ -1,5 +1,8 @@
 .core {
     margin-bottom: 18.00rem;
+    @media screen and (max-width: 576px) {
+        margin-bottom: 10rem;
+    }
 
     &__wrap {
         display: flex;
