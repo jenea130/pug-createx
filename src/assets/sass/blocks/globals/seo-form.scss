@@ -1,51 +1,56 @@
 .seo-form {
-	&__wrap {
-		display: flex;
-		align-items: flex-end;
-		gap: 2.4rem;
-	}
-
-	&__group:first-of-type,
-	&__group:nth-of-type(2) {
-		flex: 0 0 26rem;
-	}
-
-	&__group:last-of-type {
-		flex: 0 0 33.8rem;
-	}
-
-	&__label {
-		margin-bottom: 1rem;
-		display: block;
-		font-size: 1.4rem;
-		font-weight: 400;
-		color: white;
-	}
-
-	input {
-		width: 100%;
-		height: 4.4rem;
-		font-size: 1.4rem;
-		font-weight: 400;
-		// color: #9a9ca5;
-		text-indent: 1.5rem;
-		color: var(--text-dark);
-		border-radius: 4px;
-		border: 1px solid #d7dadd;
-		background: #f4f5f6;
-		outline: none;
-	}
-
-	input::placeholder {
-		font-size: 1.4rem;
-		font-weight: 400;
-		color: #9a9ca5;
-	}
-
-	&__btn {
-		padding: 0 3.6rem;
-		height: 4.4rem;
-		font-size: 1.4rem;
-		background: var(--text-dark);
-	}
+  &__wrap {
+    display: flex;
+    align-items: flex-end;
+    margin: 0 -1.6rem;
+    @media screen and (max-width: 1200px) {
+      flex-wrap: wrap;
+    }
+    @media screen and (max-width: 576px) {
+      display: block;
+      margin: 0;
+    }
+  }
+  &__group {
+    margin: 0 1.6rem 2.4rem;
+    flex: 0 0 calc(25% - 3.2rem);
+    @media screen and (max-width: 1200px) {
+      flex: 0 0 calc(50% - 3.2rem);
+    }
+    @media screen and (max-width: 576px) {
+      margin: 0 0 2.4rem;
+    }
+  }
+  &__label {
+    margin-bottom: 1rem;
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: white;
+  }
+  input {
+    width: 100%;
+    height: 4.4rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    // color: #9a9ca5;
+    text-indent: 1.5rem;
+    color: var(--text-dark);
+    border-radius: 0.40rem;
+    border: 1px solid #d7dadd;
+    background: #f4f5f6;
+    outline: none;
+  }
+  input::placeholder {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #9a9ca5;
+  }
+  &__btn {
+    padding: 0 3.6rem;
+    width: 100%;
+    height: 4.4rem;
+    font-size: 1.4rem;
+    background: var(--text-dark);
+  }
 }
