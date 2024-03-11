@@ -1,33 +1,33 @@
 .team {
-  margin-bottom: 12.00rem;
+  margin-bottom: 12rem;
   @media screen and (max-width: 992px) {
     margin-bottom: 6rem;
   }
   &__title {
-    margin-bottom: 6.00rem;
+    margin-bottom: 6rem;
     text-align: center;
   }
   &__wrap {
     display: flex;
     flex-wrap: wrap;
     // gap: 60px 30px;
-    margin: 0 -1.50rem;
+    margin: 0 -1.5rem;
     @media screen and (max-width: 576px) {
       display: block;
       margin: 0;
     }
   }
   &__item {
-    margin: 0 1.50rem 6.00rem;
-    flex: 0 0 calc(25% - 3.00rem);
+    margin: 0 1.5rem 6rem;
+    flex: 0 0 calc(25% - 3rem);
     @media screen and (max-width: 992px) {
-        flex: 0 0 calc(33.3333% - 3.00rem);
+        flex: 0 0 calc(33.3333% - 3rem);
     }
     @media screen and (max-width: 768px) {
-        flex: 0 0 calc(50% - 3.00rem);
+        flex: 0 0 calc(50% - 3rem);
     }
     @media screen and (max-width: 576px) {
-      margin: 0 0 6.00rem;
+      margin: 0 0 6rem;
     }
   }
   &__img {
@@ -43,12 +43,12 @@
     }
   }
   &__content {
-    padding: 2.00rem 0 0 0;
+    padding: 2rem 0 0 0;
     text-align: center;
   }
   &__subtitle {
-    margin-bottom: 0.60rem;
-    font-size: 2.00rem;
+    margin-bottom: 0.6rem;
+    font-size: 2rem;
     font-weight: 700;
     color: var(--text-light);
   }
