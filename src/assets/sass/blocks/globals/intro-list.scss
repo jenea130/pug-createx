@@ -16,6 +16,7 @@
     }
     li {
         flex: 1;
+        text-align: left;
     }
 
     li:not(:first-of-type) ::before {
