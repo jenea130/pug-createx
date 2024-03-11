@@ -1,28 +1,30 @@
 .tags-share {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 4.80rem;
+  margin-bottom: 5.20rem;
+  border-bottom: 0.10rem solid #E5E8ED;
+  @media screen and (max-width: 576px) {
+    display: block;
+  }
+  &__wrap {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding-bottom: 48px;
-    margin-bottom: 52px;
-    border-bottom: 1px solid #E5E8ED;
-
-    &__wrap {
-        display: flex;
-        align-items: center;
-
-        span {
-            margin-right: 12px;
-            font-size: 16px;
-            font-weight: 700;
-            color: var(--text-dark);
-        }
+    @media screen and (max-width: 576px) {
+      margin-bottom: 3.2rem;
     }
-
-    .category-list {
-        margin-bottom: 0;
-
-        li {
-            margin-bottom: 0;
-        }
+    span {
+      margin-right: 1.20rem;
+      font-size: 1.60rem;
+      font-weight: 700;
+      color: var(--text-dark);
     }
+  }
+  .category-list {
+    margin-bottom: 0;
+    li {
+      margin-bottom: 0;
+    }
+  }
 }

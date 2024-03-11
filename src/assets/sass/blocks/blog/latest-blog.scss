@@ -1,11 +1,17 @@
 .latest-blog {
-    margin-bottom: 96px;
-    &__wrap {
-        display: flex;
-        justify-content: space-between;
-        gap: 30px;
+  margin-bottom: 9.60rem;
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 3.00rem;
+    @media screen and (max-width: 576px) {
+      display: block;
     }
-    &__item {
-        flex: 1;
+  }
+  &__item {
+    flex: 1;
+    @media screen and (max-width: 576px) {
+      margin-bottom: 6.4rem;
     }
+  }
 }

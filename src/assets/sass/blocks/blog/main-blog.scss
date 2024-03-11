@@ -1,24 +1,27 @@
 .main-blog {
-    margin-bottom: 96px;
-
-    &__wrap {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
+  margin-bottom: 9.60rem;
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1.5rem;
+    @media screen and (max-width: 576px) {
+      display: block;
+      margin: 0;
     }
-
-    &__item {
-        margin-bottom: 32px;
-        flex: 0 0 390px;
+  }
+  &__item {
+    margin: 0 1.5rem 3.2rem;
+    flex: 0 0 calc(50% - 3.00rem);
+    @media screen and (max-width: 576px) {
+      margin: 0 0 3.2rem;
     }
-
-    .post {
-        &__img {
-            height: 300px;
-        }
-
-        &__title {
-            margin-bottom: 7px;
-        }
+  }
+  .post {
+    &__img {
+      height: 30.00rem;
     }
+    &__title {
+      margin-bottom: 0.70rem;
+    }
+  }
 }

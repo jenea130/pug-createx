@@ -1,24 +1,30 @@
 .single-blog {
-    .page-intro {
-        height: 500px;
-        &__breadcrumbs {
-            margin-bottom: 42px;
-        }
-        &__title {
-            font-size: 56px;
-            line-height: 1.3;
-        }
+  .page-intro {
+    height: 50.00rem;
+    @media screen and (max-width: 576px) {
+      padding-bottom: 6.4rem;
+      height: auto;
     }
-    &__wrap {
-        display: flex;
-        justify-content: space-between;
-        gap: 78px;
+    &__breadcrumbs {
+      margin-bottom: 4.20rem;
     }
-    &__main {
-        margin-bottom: 180px;
-        flex: 1;
+  }
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 7.80rem;
+    @media screen and (max-width: 992px) {
+      display: block;
     }
-    &__aside {
-        flex: 0 0 340px;
+  }
+  &__main {
+    margin-bottom: 18.00rem;
+    flex: 1;
+  }
+  &__aside {
+    flex: 0 0 34.00rem;
+    @media screen and (max-width: 992px) {
+      max-width: 500px;
     }
+  }
 }

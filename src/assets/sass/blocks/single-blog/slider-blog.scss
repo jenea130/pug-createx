@@ -1,73 +1,64 @@
 .slider-blog {
-  margin-bottom: 184px;
-
-  &__title {
-    margin-bottom: 8px;
+  margin-bottom: 18.40rem;
+  @media screen and (max-width: 992px) {
+    margin-bottom: 6rem;
   }
-
+  &__title {
+    margin-bottom: 0.80rem;
+  }
   &__header {
     position: relative;
-    bottom: 45px;
-    left: 23px;
+    bottom: 4.50rem;
+    left: 2.30rem;
     display: flex;
     justify-content: flex-end;
-    padding-right: 10px;
-    margin-bottom: 2px;
+    padding-right: 1.00rem;
+    margin-bottom: 0.20rem;
   }
-
   .slick-list {
-    margin: 0 -15px;
+    margin: 0 -1.50rem;
   }
-
   .slick-slide {
-    margin: 0 15px;
-    width: 390px;
+    margin: 0 1.50rem;
+    width: 39.00rem;
   }
-
   &__arrow {
     position: relative;
-    width: 48px;
-    height: 48px;
+    width: 4.80rem;
+    height: 4.80rem;
     border-radius: 50%;
     cursor: pointer;
-
     &:hover {
       background: var(--accent);
-
       svg {
         fill: white;
       }
     }
-
     svg {
       position: absolute;
       top: 50%;
       left: 50%;
-      width: 18px;
-      height: 12px;
-      margin-top: -6px;
-      margin-left: -9px;
+      width: 1.80rem;
+      height: 1.20rem;
+      margin-top: -0.60rem;
+      margin-left: -0.90rem;
       fill: var(--text-light);
     }
   }
-
   &__wrap {
-    margin-bottom: 180px;
+    margin-bottom: 18.00rem;
     display: flex;
-    gap: 30px;
+    gap: 3.00rem;
   }
-
   &__item {
-    flex: 0 0 390px;
+    flex: 0 0 39.00rem;
   }
-
   .post {
     &__img {
-      height: 300px;
+      height: 30.00rem;
     }
-
     &__title {
-      margin-bottom: 7px;
+      margin-bottom: 0.70rem;
     }
   }
 }

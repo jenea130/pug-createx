@@ -1,27 +1,21 @@
 .page-about-us {
-    .page-intro {
-        margin-bottom: 119px;
-        height: 661px;
-
-        &__breadcrumbs {
-            margin-bottom: 46px;
-        }
-
-        &__title {
-            font-size: 72px;
-        }
-
-        &__text {
-            margin-bottom: 120px;
-            font-size: 20px;
-            line-height: 1.5;
-            color: var(--text-gray);
-        }
+  .page-intro {
+    margin-bottom: 11.90rem;
+    height: 66.10rem;
+    &__breadcrumbs {
+      margin-bottom: 4.60rem;
     }
-    .rating {
-        margin-bottom: 121px;
+    &__text {
+      margin-bottom: 12.00rem;
+      font-size: 2.00rem;
+      line-height: 1.5;
+      color: var(--text-gray);
     }
-    .ask__img {
-        padding-top: 111px;
-    }
+  }
+  .rating {
+    margin-bottom: 12.10rem;
+  }
+  .ask__img {
+    padding-top: 11.10rem;
+  }
 }

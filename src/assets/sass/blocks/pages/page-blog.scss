@@ -1,27 +1,31 @@
 .page-blog {
-    .page-intro {
-        height: 623px;
-
-        &__breadcrumbs {
-            margin-bottom: 46px;
-        }
-
-        &__text {
-            margin-bottom: 58px;
-        }
+  .page-intro {
+    height: 62.30rem;
+    &__breadcrumbs {
+      margin-bottom: 4.60rem;
     }
-
-    &__wrap {
-        display: flex;
-        gap: 78px;
-        margin-bottom: 119px;
+    &__text {
+      margin-bottom: 5.80rem;
     }
-
-    &__main {
-        flex: 1;
+  }
+  &__wrap {
+    display: flex;
+    gap: 7.80rem;
+    margin-bottom: 11.90rem;
+    @media screen and (max-width: 1200px) {
+      gap: 4.80rem;
     }
-
-    &__aside {
-        flex: 0 0 342px;
+    @media screen and (max-width: 992px) {
+      display: block;
     }
+  }
+  &__main {
+    flex: 1;
+  }
+  &__aside {
+    flex: 0 0 34.20rem;
+    @media screen and (max-width: 992px) {
+      max-width: 50rem;
+    }
+  }
 }
